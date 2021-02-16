@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="Doctrine #1 - Création du controller article">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +12,14 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="doctrine-1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -118,6 +128,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1oP3SNC55jiMER5Ze34hCMgksUX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -125,8 +136,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -145,16 +157,62 @@
       <updated>1613174396866</updated>
       <workItem from="1613174397942" duration="5272000" />
       <workItem from="1613317358415" duration="5825000" />
+      <workItem from="1613418251698" duration="6654000" />
+      <workItem from="1613493120138" duration="597000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <created>1613418397155</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613418397155</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Doctrine #1 - Création des entités Article/Categorie/Utilisateur">
+      <created>1613433671635</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613433671635</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Doctrine #1 - Création du controller article">
+      <created>1613435067284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613435067284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <MESSAGE value="Doctrine #1 - Création des entités Article/Categorie/Utilisateur" />
+    <MESSAGE value="Doctrine #1 - Création du controller article" />
+    <option name="LAST_COMMIT_MESSAGE" value="Doctrine #1 - Création du controller article" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1613177981569">
+    <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1613433432665">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613177981569" />
+    <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613433432665" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1613418283001">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613418283001" />
+    <state x="838" y="438" key="Github.ShareDialog" timestamp="1613418317482">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="838" y="438" key="Github.ShareDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613418317482" />
+    <state x="461" y="185" key="SettingsEditor" timestamp="1613429985539">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1613435068473">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613435068473" />
   </component>
 </project>
