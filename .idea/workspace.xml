@@ -19,18 +19,47 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="FOSUserBundle #2 Branch first commit">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="push chiant">
+      <change afterPath="$PROJECT_DIR$/public/admin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/init/chartjs-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/init/datatables-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/init/flot-chart-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/init/fullcalendar-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/init/gmap-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/init/peitychart-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/init/vector-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/init/weather-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/chosen/chosen.jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/chosen/chosen.jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/chosen/chosen.proto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/chosen/chosen.proto.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/buttons.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/buttons.colVis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/buttons.flash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/buttons.html5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/buttons.print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/dataTables.buttons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/datatables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/pdfmake.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/data-table/vfs_fonts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/gmap/gmapApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/gmap/gmaps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/lib/gmap/gmaps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/vmap.sampledata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/widgets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/article-template.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Utilisateur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +73,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="doctrine-1" />
+        <entry key="$PROJECT_DIR$" value="FOSUserBundle-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,7 +186,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1oP3SNC55jiMER5Ze34hCMgksUX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -165,15 +196,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\assets\controllers" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public\build" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public\images" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\assets\controllers" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -188,6 +221,7 @@
       <workItem from="1613317358415" duration="5825000" />
       <workItem from="1613418251698" duration="6654000" />
       <workItem from="1613493120138" duration="7951000" />
+      <workItem from="1613594614562" duration="6616000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -240,6 +274,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial" />
@@ -254,10 +289,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613433432665" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1613418283001">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1613597294660">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613418283001" />
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613597294660" />
     <state x="838" y="438" key="Github.ShareDialog" timestamp="1613418317482">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -266,9 +301,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1613499632659">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1613504016790">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613499632659" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613504016790" />
   </component>
 </project>
