@@ -22,22 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="Correction de la responsivité + ajustement modèle d'article">
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/ChangePassword/change_password.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/ChangePassword/change_password_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Resetting/check_email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Resetting/email.txt.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Resetting/request.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Resetting/request_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Resetting/reset.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Resetting/reset_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Security/loggedin.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Security/login_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/layout.html.twig" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="UserManagement #3 override interface security/resetting/changepassword/layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BaseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +196,8 @@
       <workItem from="1613418251698" duration="6654000" />
       <workItem from="1613493120138" duration="7951000" />
       <workItem from="1613594614562" duration="7462000" />
-      <workItem from="1613671945507" duration="15966000" />
+      <workItem from="1613671945507" duration="16403000" />
+      <workItem from="1613755180319" duration="1081000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -251,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613606720178</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UserManagement #3 override interface security/resetting/changepassword/layout">
+      <created>1613698262859</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1613698262859</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +273,8 @@
     <MESSAGE value="modif base" />
     <MESSAGE value="FOSUserBundle #2 Branch first commit" />
     <MESSAGE value="Correction de la responsivité + ajustement modèle d'article" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction de la responsivité + ajustement modèle d'article" />
+    <MESSAGE value="UserManagement #3 override interface security/resetting/changepassword/layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserManagement #3 override interface security/resetting/changepassword/layout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1613433432665">
@@ -295,10 +293,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1613606721760">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1613698265261">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613606721760" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613698265261" />
     <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1613674917467">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
