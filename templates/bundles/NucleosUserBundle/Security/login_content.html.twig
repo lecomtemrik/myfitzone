@@ -1,0 +1,18 @@
+{% trans_default_domain 'NucleosUserBundle' %}
+
+{{ form_errors(form) }}
+
+{{ form_start(form) }}
+
+    <fieldset>
+        <legend><i class="fa fa-lock" aria-hidden="true"></i> {{ 'security.login.title'|trans }}</legend>
+
+        {{ form_widget(form) }}
+
+        <div>
+            <a class="btn btn-outline-secondary" href="{{ path('nucleos_user_resetting_request') }}">
+                {{ 'security.forgotten_password'|trans }}
+            </a>
+        </div>
+    </fieldset>
+{{ form_end(form) }}
