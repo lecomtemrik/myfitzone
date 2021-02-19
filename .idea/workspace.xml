@@ -22,12 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="UserManagement #3 override interface security/resetting/changepassword/layout">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="access controle interface admin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +192,7 @@
       <workItem from="1613493120138" duration="7951000" />
       <workItem from="1613594614562" duration="7462000" />
       <workItem from="1613671945507" duration="16403000" />
-      <workItem from="1613755180319" duration="1081000" />
+      <workItem from="1613755180319" duration="1386000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -248,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613698262859</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="access controle interface admin">
+      <created>1613756404206</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1613756404206</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +276,8 @@
     <MESSAGE value="FOSUserBundle #2 Branch first commit" />
     <MESSAGE value="Correction de la responsivité + ajustement modèle d'article" />
     <MESSAGE value="UserManagement #3 override interface security/resetting/changepassword/layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserManagement #3 override interface security/resetting/changepassword/layout" />
+    <MESSAGE value="access controle interface admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="access controle interface admin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1613433432665">
