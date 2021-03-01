@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Utilisateur index{% endblock %}
+
+{% block body %}
+    <h1>Utilisateur index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>UsernameCanonical</th>
+                <th>Email</th>
+                <th>EmailCanonical</th>
+                <th>Enabled</th>
+                <th>Salt</th>
+                <th>Password</th>
+                <th>LastLogin</th>
+                <th>ConfirmationToken</th>
+                <th>PasswordRequestedAt</th>
+                <th>Locale</th>
+                <th>Timezone</th>
+                <th>Roles</th>
+                <th>Id</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for utilisateur in utilisateurs %}
+            <tr>
+                <td>{{ utilisateur.username }}</td>
+                <td>{{ utilisateur.usernameCanonical }}</td>
+                <td>{{ utilisateur.email }}</td>
+                <td>{{ utilisateur.emailCanonical }}</td>
+                <td>{{ utilisateur.enabled ? 'Yes' : 'No' }}</td>
+                <td>{{ utilisateur.salt }}</td>
+                <td>{{ utilisateur.password }}</td>
+                <td>{{ utilisateur.lastLogin ? utilisateur.lastLogin|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ utilisateur.confirmationToken }}</td>
+                <td>{{ utilisateur.passwordRequestedAt ? utilisateur.passwordRequestedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ utilisateur.locale }}</td>
+                <td>{{ utilisateur.timezone }}</td>
+                <td>{{ utilisateur.roles ? utilisateur.roles|join(', ') : '' }}</td>
+                <td>{{ utilisateur.id }}</td>
+                <td>
+                    <a href="{{ path('utilisateur_show', {'id': utilisateur.id}) }}">show</a>
+                    <a href="{{ path('utilisateur_edit', {'id': utilisateur.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="15">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('utilisateur_new') }}">Create new</a>
+{% endblock %}

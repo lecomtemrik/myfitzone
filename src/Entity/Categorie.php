@@ -22,6 +22,11 @@ class Categorie
      */
     private $libelle;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $iconCategorie;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -38,4 +43,21 @@ class Categorie
 
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getIconCategorie()
+    {
+        return $this->iconCategorie;
+    }
+
+    /**
+     * @param mixed $iconCategorie
+     */
+    public function setIconCategorie($iconCategorie): void
+    {
+        $this->iconCategorie = $iconCategorie;
+    }
+
 }

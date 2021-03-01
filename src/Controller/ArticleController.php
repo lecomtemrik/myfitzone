@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/article")
+ * @Route("/articles")
  */
 class ArticleController extends AbstractController
 {
@@ -21,16 +21,6 @@ class ArticleController extends AbstractController
     public function index(ArticleRepository $articleRepository): Response
     {
         return $this->render('article/index.html.twig', [
-            'articles' => $articleRepository->findAll(),
-        ]);
-    }
-
-    /**
-     * @Route("/articletemplate", name="article_index", methods={"GET"})
-     */
-    public function articleTemplate(ArticleRepository $articleRepository): Response
-    {
-        return $this->render('article-template.html.twig', [
             'articles' => $articleRepository->findAll(),
         ]);
     }
@@ -101,4 +91,5 @@ class ArticleController extends AbstractController
 
         return $this->redirectToRoute('article_index');
     }
+
 }

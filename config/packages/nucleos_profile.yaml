@@ -1,0 +1,5 @@
+nucleos_profile:
+  registration:
+    confirmation:
+#      from_email:  "%mailer_user%"
+      from_email:  '%env(MAIL_SENDER)%'

@@ -57,6 +57,11 @@ class Article
      */
     private $dateModification;
 
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private $iconArticle;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -165,4 +170,21 @@ class Article
 
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getIconArticle()
+    {
+        return $this->iconArticle;
+    }
+
+    /**
+     * @param mixed $iconArticle
+     */
+    public function setIconArticle($iconArticle): void
+    {
+        $this->iconArticle = $iconArticle;
+    }
+
 }
