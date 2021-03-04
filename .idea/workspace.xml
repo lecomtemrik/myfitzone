@@ -22,38 +22,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="merge master and userManagement">
-      <change afterPath="$PROJECT_DIR$/src/Controller/TemplateController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UtilisateurController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UtilisateurType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/menu/_sidebar.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/utilisateur/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/utilisateur/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/utilisateur/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/utilisateur/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/utilisateur/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/utilisateur/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="crud categorie / nucleos_profile / menu / article template / interface icon">
+      <change afterPath="$PROJECT_DIR$/templates/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210215235850.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210216190558.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210216190731.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UtilisateurController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Utilisateur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article-template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/article-template.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UtilisateurType.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/nucleos_profile.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/sidebar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/nucleos_profile.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/show.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,6 +235,16 @@
       <workItem from="1614442978331" duration="456000" />
       <workItem from="1614443447982" duration="6823000" />
       <workItem from="1614626228613" duration="3623000" />
+      <workItem from="1614629942017" duration="3886000" />
+      <workItem from="1614634833683" duration="3221000" />
+      <workItem from="1614642647261" duration="2380000" />
+      <workItem from="1614679657579" duration="3640000" />
+      <workItem from="1614714767185" duration="5256000" />
+      <workItem from="1614795499981" duration="1284000" />
+      <workItem from="1614797475003" duration="3393000" />
+      <workItem from="1614805815681" duration="236000" />
+      <workItem from="1614815136231" duration="3791000" />
+      <workItem from="1614881271706" duration="1229000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -310,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613756597273</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="crud categorie / nucleos_profile / menu / article template / interface icon">
+      <created>1614630229137</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614630229137</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,13 +344,14 @@
     <MESSAGE value="UserManagement #3 override interface security/resetting/changepassword/layout" />
     <MESSAGE value="access controle interface admin" />
     <MESSAGE value="merge master and userManagement" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge master and userManagement" />
+    <MESSAGE value="crud categorie / nucleos_profile / menu / article template / interface icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud categorie / nucleos_profile / menu / article template / interface icon" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614444529534">
+    <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614710564035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614444529534" />
+    <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614710564035" />
     <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614297983909">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -365,10 +372,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1613756600505">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1614630236195">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613756600505" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614630236195" />
     <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1613781778945">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

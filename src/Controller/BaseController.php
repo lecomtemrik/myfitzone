@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Categorie;
 use App\Repository\ArticleRepository;
+use App\Repository\CategorieRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -16,11 +17,12 @@ class BaseController extends AbstractController
     /**
      * @Route("/", name="home")
      */
-    public function index(ArticleRepository $articleRepository):Response
+    public function index(ArticleRepository $articleRepository, CategorieRepository $categorieRepository):Response
     {
         $session = new Session();
         $session->clear();
         $session->set('articles', $articleRepository->findAll());
+        $session->set('categories', $categorieRepository->findAll());
         return $this->render('base.html.twig');
     }
 
@@ -30,5 +32,13 @@ class BaseController extends AbstractController
     public function admin()
     {
         return $this->render('admin/admin.html.twig');
+    }
+
+    /**
+     * @Route("/loginpage", name="loginpage")
+     */
+    public function login()
+    {
+        return $this->render('login.html.twig');
     }
 }

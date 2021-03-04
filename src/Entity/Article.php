@@ -38,12 +38,14 @@ class Article
     private $contenu;
 
     /**
-     * @ORM\OneToOne(targetEntity=Utilisateur::class)
+     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="id")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $utilisateur;
 
     /**
-     * @ORM\OneToOne(targetEntity=Categorie::class)
+     * @ORM\ManyToOne(targetEntity="Categorie", inversedBy="article")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $categorie;
 
