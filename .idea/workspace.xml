@@ -22,27 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="crud categorie / nucleos_profile / menu / article template / interface icon">
-      <change afterPath="$PROJECT_DIR$/templates/login.html.twig" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="menu update / résolution d'erreur / register profile nucleos bundle">
+      <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/Version20210215235850.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/Version20210216190558.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/Version20210216190731.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UtilisateurController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Utilisateur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/UtilisateurType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/layout.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/utilisateur/_delete_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/utilisateur/_form.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/utilisateur/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/utilisateur/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/utilisateur/new.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/utilisateur/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/models/article-template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/article-template.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +164,7 @@
       <path value="$PROJECT_DIR$/vendor/nucleos/user-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-menu" />
       <path value="$PROJECT_DIR$/vendor/nucleos/profile-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oP3SNC55jiMER5Ze34hCMgksUX" />
@@ -245,6 +240,7 @@
       <workItem from="1614805815681" duration="236000" />
       <workItem from="1614815136231" duration="3791000" />
       <workItem from="1614881271706" duration="1229000" />
+      <workItem from="1614901914309" duration="1592000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -376,9 +372,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614630236195" />
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1613781778945">
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1614888409643">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613781778945" />
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614888409643" />
   </component>
 </project>

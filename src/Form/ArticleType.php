@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Article;
 use App\Entity\Categorie;
 use Doctrine\DBAL\Types\StringType;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -19,7 +20,7 @@ class ArticleType extends AbstractType
             ->add('titre')
             ->add('slug')
             ->add('description')
-            ->add('contenu')
+            ->add('contenu', CKEditorType::class)
             ->add('dateCreation')
             ->add('dateModification')
             ->add('utilisateur')
