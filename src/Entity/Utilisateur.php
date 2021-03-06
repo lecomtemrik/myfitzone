@@ -22,6 +22,16 @@ class Utilisateur extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Profil::class, mappedBy="utilisateur", cascade="all")
+     */
+    protected $profil;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Adresse::class, mappedBy="utilisateur", cascade="all")
+     */
+    protected $adresse;
+
     public function __construct()
     {
         parent::__construct();

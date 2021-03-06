@@ -22,21 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="menu update / résolution d'erreur / register profile nucleos bundle">
-      <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="(wysiwyg) #5 ajout d'un wysiwyg sur le textarea de la création d'article&#10;Installation / configuration / personnalisation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210215235850.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210216190558.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210216190731.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/models/article-template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/article-template.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Utilisateur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +230,9 @@
       <workItem from="1614805815681" duration="236000" />
       <workItem from="1614815136231" duration="3791000" />
       <workItem from="1614881271706" duration="1229000" />
-      <workItem from="1614901914309" duration="1592000" />
+      <workItem from="1614901914309" duration="2241000" />
+      <workItem from="1614966750251" duration="3790000" />
+      <workItem from="1615033200948" duration="9101000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -312,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614630229137</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="(wysiwyg) #5 ajout d'un wysiwyg sur le textarea de la création d'article&#10;Installation / configuration / personnalisation">
+      <created>1614904278938</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614904278938</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +340,8 @@
     <MESSAGE value="access controle interface admin" />
     <MESSAGE value="merge master and userManagement" />
     <MESSAGE value="crud categorie / nucleos_profile / menu / article template / interface icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="crud categorie / nucleos_profile / menu / article template / interface icon" />
+    <MESSAGE value="(wysiwyg) #5 ajout d'un wysiwyg sur le textarea de la création d'article&#10;Installation / configuration / personnalisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="(wysiwyg) #5 ajout d'un wysiwyg sur le textarea de la création d'article&#10;Installation / configuration / personnalisation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614710564035">
@@ -368,10 +368,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1614630236195">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1614904280535">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614630236195" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614904280535" />
     <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1614888409643">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
