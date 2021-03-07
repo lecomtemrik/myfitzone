@@ -1,0 +1,8 @@
+beelab_tag:
+    tag_class: App\Entity\Tag
+    #You should use this option (with true value)
+    #only if you want to delete a tag when a taggable
+    #entity is deleted. You should avoid purging tags
+    #if you configured more than a taggable entity, since
+    #this could lead to constraint violations.
+    purge: false
