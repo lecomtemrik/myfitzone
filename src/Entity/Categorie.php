@@ -30,13 +30,13 @@ class Categorie
     private $iconCategorie;
 
     /**
-     * @ORM\OneToMany(targetEntity="Article", mappedBy="categorie")
+     * @ORM\OneToMany(targetEntity="Souscategorie", mappedBy="categorie")
      */
-    private $article;
+    private $sousCategorie;
 
     public function __construct()
     {
-        $this->article = new ArrayCollection();
+        $this->sousCategorie = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -73,26 +73,26 @@ class Categorie
     }
 
     /**
-     * @return Collection|Article[]
+     * @return Collection|SousCategorie[]
      */
-    public function getArticle(): Collection
+    public function getSousCategorie(): Collection
     {
-        return $this->article;
+        return $this->sousCategorie;
     }
 
-    public function addArticle(Article $article): self
+    public function addSousCategorie(SousCategorie $sousCategorie): self
     {
-        if (!$this->article->contains($article)) {
-            $this->article[] = $article;
+        if (!$this->sousCategorie->contains($sousCategorie)) {
+            $this->sousCategorie[] = $sousCategorie;
         }
 
         return $this;
     }
 
-    public function removeArticle(Article $article): self
+    public function removeSousCategorie(SousCategorie $sousCategorie): self
     {
-        if ($this->article->contains($article)) {
-            $this->article->removeElement($article);
+        if ($this->article->contains($sousCategorie)) {
+            $this->article->removeElement($sousCategorie);
         }
 
         return $this;

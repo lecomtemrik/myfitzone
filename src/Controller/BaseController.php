@@ -34,11 +34,4 @@ class BaseController extends AbstractController
         return $this->render('admin/admin.html.twig');
     }
 
-    /**
-     * @Route("/loginpage", name="loginpage")
-     */
-    public function login()
-    {
-        return $this->render('login.html.twig');
-    }
 }

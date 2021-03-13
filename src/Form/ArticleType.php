@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Article;
 use App\Entity\Categorie;
+use App\Entity\SousCategorie;
 use FOS\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -21,12 +22,9 @@ class ArticleType extends AbstractType
             ->add('description')
             ->add('tagsText', TextType::class, ['required' => false, 'label' => 'Tags'])
             ->add('contenu', CKEditorType::class)
-            ->add('dateCreation')
-            ->add('dateModification')
-            ->add('utilisateur')
-            ->add('categorie', EntityType::class,[
-                'class' => Categorie::class,
-                'choice_label'=>'libelle'
+            ->add('sousCategorie', EntityType::class,[
+                'class' => SousCategorie::class,
+                'choice_label'=>'LibelleSouscategorie'
             ])
         ;
     }

@@ -1,18 +1,45 @@
 {% trans_default_domain 'NucleosUserBundle' %}
-
 {{ form_errors(form) }}
 
-{{ form_start(form) }}
+<div id="logreg-forms">
 
-    <fieldset>
-        <legend><i class="fa fa-lock" aria-hidden="true"></i> {{ 'security.login.title'|trans }}</legend>
+        {{ form_start(form) }}
 
-        {{ form_widget(form) }}
+        <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Connexion</h1>
 
-        <div>
-            <a class="btn btn-outline-secondary" href="{{ path('nucleos_user_resetting_request') }}">
-                {{ 'security.forgotten_password'|trans }}
-            </a>
+        <div class="social-login">
+                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i>  Facebook</span> </button>
         </div>
-    </fieldset>
-{{ form_end(form) }}
+        <div class="social-login">
+                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Google+</span> </button>
+        </div>
+
+        <hr>
+
+        {{ form_widget(form._username, {'id':'inputEmail', 'attr':{'class':'form-control', 'placeholder':'adresse mail', 'required':'', 'autofocus':''}}) }}<br>
+
+        {{ form_widget(form._password, {'id':'inputPassword', 'attr':{'class':'form-control', 'placeholder':'Mot de passe', 'required':''}}) }}<br>
+
+        {{ form_widget(form._remember_me) }} {{ form_label(form._remember_me, 'Se souvenir de moi') }}<br>
+
+        {{ form_widget(form.save, {'label':'Connexion', 'attr':{'class':'btn btn-success btn-block'}}) }}<br>
+
+        <a href="{{ path('nucleos_user_resetting_request') }}" id="forgot_pswd">Mot de passe oublié ?</a>
+        <hr>
+
+        <a style="color:white;" href="{{ path('nucleos_profile_registration_register') }}" class="btn btn-primary btn-block" id="btn-signup">
+                <i class="fas fa-user-plus"></i> S'inscrire
+        </a>
+
+        {{ form_end(form) }}<br>
+</div>
+
+
+
+
+
+{#</div>#}
+
+
+
+

@@ -22,17 +22,44 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="(updateDB) #7 Ajout Adresse / Profil">
-      <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="(tag-8) #8 ajout beelabtagbundle pour la gestion des tags des articles">
+      <change afterPath="$PROJECT_DIR$/public/style/user-management-form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/Profile/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/Profile/edit_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/Profile/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/Profile/show_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/Registration/check_email.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/Registration/confirmed.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/Registration/email.txt.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/Registration/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/Registration/register_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle/layout.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/landing/_accueil-admin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/landing/_accueil.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BaseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Resetting/request_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Resetting/request_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Security/login_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Security/login_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categorie/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/models/article-template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/article-template.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,25 +202,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testResponsive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosProfileBundle" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle\views" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\NucleosUser" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\nucleos" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public\style" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\default" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\models" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUser\views" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUser" />
     </key>
   </component>
   <component name="RunManager">
@@ -240,7 +267,17 @@
       <workItem from="1614901914309" duration="2241000" />
       <workItem from="1614966750251" duration="3790000" />
       <workItem from="1615033200948" duration="10759000" />
-      <workItem from="1615077751974" duration="3944000" />
+      <workItem from="1615077751974" duration="4671000" />
+      <workItem from="1615123738808" duration="7381000" />
+      <workItem from="1615133440041" duration="1776000" />
+      <workItem from="1615145877031" duration="6741000" />
+      <workItem from="1615226223120" duration="18140000" />
+      <workItem from="1615308985572" duration="16247000" />
+      <workItem from="1615401558302" duration="13543000" />
+      <workItem from="1615488765208" duration="9554000" />
+      <workItem from="1615568703193" duration="1029000" />
+      <workItem from="1615589426779" duration="8052000" />
+      <workItem from="1615673203676" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -326,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615060112216</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="(tag-8) #8 ajout beelabtagbundle pour la gestion des tags des articles">
+      <created>1615081886083</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615081886083</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,17 +401,18 @@
     <MESSAGE value="crud categorie / nucleos_profile / menu / article template / interface icon" />
     <MESSAGE value="(wysiwyg) #5 ajout d'un wysiwyg sur le textarea de la création d'article&#10;Installation / configuration / personnalisation" />
     <MESSAGE value="(updateDB) #7 Ajout Adresse / Profil" />
-    <option name="LAST_COMMIT_MESSAGE" value="(updateDB) #7 Ajout Adresse / Profil" />
+    <MESSAGE value="(tag-8) #8 ajout beelabtagbundle pour la gestion des tags des articles" />
+    <option name="LAST_COMMIT_MESSAGE" value="(tag-8) #8 ajout beelabtagbundle pour la gestion des tags des articles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614710564035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614710564035" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615078367489">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615592999202">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615078367489" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615592999202" />
     <state x="736" y="452" key="ComposerInitDialogKey" timestamp="1613781679085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -384,13 +429,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1615060122009">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1615081887603">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615060122009" />
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1614888409643">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615081887603" />
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1615598895420">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614888409643" />
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615598895420" />
   </component>
 </project>

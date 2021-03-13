@@ -17,9 +17,7 @@
                 <hr>
 
                 <!-- Date/Time -->
-                <p>{{ article.dateCreation|date }}</p>
-
-                <p>posté par {{ article.utilisateur }}</p>
+                <p>Mis à jour le : {{ article.dateModification|date("d/m/Y", "Europe/Paris") }}</p>
 
                 <hr>
 
@@ -40,35 +38,35 @@
 
                 <!-- Categories Widget -->
                 <div class="card my-4">
-                    <h5 class="card-header">Categories</h5>
+                    <h5 class="card-header">Tags</h5>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul class="list-unstyled mb-0">
                                     <li>
-                                        <a href="#">Fitness</a>
+                                        <a href="#">{{ article.tagsText }}</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Musculation</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Gym</a>
-                                    </li>
+{#                                    <li>#}
+{#                                        <a href="#">Musculation</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="#">Gym</a>#}
+{#                                    </li>#}
                                 </ul>
                             </div>
-                            <div class="col-lg-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="#">Santé</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Training</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sport</a>
-                                    </li>
-                                </ul>
-                            </div>
+{#                            <div class="col-lg-6">#}
+{#                                <ul class="list-unstyled mb-0">#}
+{#                                    <li>#}
+{#                                        <a href="#">Santé</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="#">Training</a>#}
+{#                                    </li>#}
+{#                                    <li>#}
+{#                                        <a href="#">Sport</a>#}
+{#                                    </li>#}
+{#                                </ul>#}
+{#                            </div>#}
                         </div>
                     </div>
                 </div>

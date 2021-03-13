@@ -2026,13 +2026,14 @@ header .form-inline {
     left: 30px;
     top: 20px; }
   .stat-widget-five .stat-content {
-    margin-left: 100px; }
+    margin-left: 100px;
+    position: absolute;
+    top: 29px;}
   .stat-widget-five .stat-text {
     color: #455a64;
     font-size: 20px; }
   .stat-widget-five .stat-heading {
-    color: #99abb4;
-    font-size: 14px; }
+    font-size: 30px; }
 
 .horizontal:before {
   background: #ffffff;

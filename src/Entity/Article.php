@@ -40,13 +40,6 @@ class Article implements TaggableInterface
     private $tagsText;
 
     /**
-     * @var \DateTimeInterface
-     *
-     * @ORM\Column(type="datetime", nullable=true)
-     */
-    private $updated;
-
-    /**
      * @ORM\Column(type="string", length=255)
      */
     private $description;
@@ -63,10 +56,10 @@ class Article implements TaggableInterface
     private $utilisateur;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Categorie", inversedBy="article")
+     * @ORM\ManyToOne(targetEntity="SousCategorie", inversedBy="article")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $categorie;
+    private $sousCategorie;
 
     /**
      * @ORM\Column(type="datetime")
@@ -150,7 +143,6 @@ class Article implements TaggableInterface
     public function setTagsText(?string $tagsText): void
     {
         $this->tagsText = $tagsText;
-        $this->updated = new \DateTimeImmutable();
     }
 
     public function getTagsText(): ?string
@@ -203,17 +195,17 @@ class Article implements TaggableInterface
     /**
      * @return mixed
      */
-    public function getCategorie()
+    public function getSousCategorie()
     {
-        return $this->categorie;
+        return $this->sousCategorie;
     }
 
     /**
-     * @param mixed $categorie
+     * @param mixed $SousCategorie
      */
-    public function setCategorie($categorie): void
+    public function setSousCategorie($SousCategorie): void
     {
-        $this->categorie = $categorie;
+        $this->sousCategorie = $SousCategorie;
     }
 
     public function getDateCreation(): ?\DateTimeInterface
@@ -238,6 +230,19 @@ class Article implements TaggableInterface
         $this->dateModification = $dateModification;
 
         return $this;
+    }
+
+    /**
+     * @ORM\PrePersist
+     * @ORM\PreUpdate
+     */
+    public function updatedTimestamps()
+    {
+        if ($this->getDateCreation() == null) {
+            $this->setDateCreation(new \DateTime('now'));
+        }else {
+            $this->setDateModification(new \DateTime('now'));
+        }
     }
 
     /**

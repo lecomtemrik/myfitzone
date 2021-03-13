@@ -1,7 +1,18 @@
 {% trans_default_domain 'NucleosUserBundle' %}
 
 {{ form_errors(form) }}
+<div id="logreg-forms">
+    {{ form_start(form) }}
+{#    <form action="/reset/password/" class="form-reset">#}
+        <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Réinitialiser le mot de passe</h1>
+        {{ form_widget(form.username, {'id':'resetEmail', 'attr':{'class':'form-control', 'placeholder':'adresse mail', 'required':'', 'autofocus':''}}) }}<br>
+        {{ form_widget(form.save, {'label':'Valider', 'attr':{'class':'btn btn-primary btn-block'}}) }}<br>
+        <a href="{{ path('nucleos_user_security_login') }}" id="cancel_reset"><i class="fas fa-angle-left"></i> Retour</a>
+{#    </form>#}
+    {{ form_end(form) }}
+</div>
 
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-{{ form_end(form) }}
+
+
+
+

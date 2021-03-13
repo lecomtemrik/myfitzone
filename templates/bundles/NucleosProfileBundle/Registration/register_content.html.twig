@@ -1,0 +1,39 @@
+{% trans_default_domain 'NucleosProfileBundle' %}
+{{ form_errors(form) }}
+<div id="logreg-forms">
+
+        {{ form_start(form, {'method': 'post', 'action': path('nucleos_profile_registration_register'), 'attr': {'class': 'nucleos_profile_registration_register'}}) }}
+
+        <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">S'inscrire</h1>
+
+        <div class="social-login">
+            <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up with Facebook</span> </button>
+        </div>
+        <div class="social-login">
+            <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button>
+        </div>
+
+        <hr>
+
+{#        <input type="text" id="user-name" class="form-control" placeholder="nom d'utilisateur" required="" autofocus=""><br>#}
+        {{ form_widget(form.username, {'id':'user-name', 'attr':{'class':'form-control', 'placeholder':'nom d\'utilisateur', 'required':'', 'autofocus':''}}) }}<br>
+
+{#        <input type="email" id="user-email" class="form-control" placeholder="adresse email" required autofocus=""><br>#}
+        {{ form_widget(form.email, {'id':'user-email', 'attr':{'class':'form-control', 'placeholder':'adresse mail', 'required':'', 'autofocus':''}}) }}<br>
+
+        {{ form_widget(form.plainPassword.first, {'id':'user-pass', 'attr':{'class':'form-control', 'placeholder':'mot de passe', 'required':'', 'autofocus':''}}) }}<br>
+
+        {{ form_widget(form.plainPassword.second, {'id':'user-repeatpass', 'attr':{'class':'form-control', 'placeholder':'confirmer le mot de passe', 'required':'', 'autofocus':''}}) }}<br>
+
+        {{ form_widget(form.save, {'label':'S\'inscrire', 'attr':{'class':'btn btn-primary btn-block'}}) }}<br>
+
+{#        <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> S'inscrire</button>#}
+        <a href="{{ path('nucleos_user_security_login') }}" id="cancel_signup"><i class="fas fa-angle-left"></i> Retour</a>
+        {{ form_end(form) }}
+
+{#    <br>#}
+</div>
+
+
+
+
