@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Utilisateur{% endblock %}
+
+{% block body %}
+    <h1>Liste des utilisateurs</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>nom d'utilisateur</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for utilisateur in utilisateurs %}
+            <tr>
+                <td>{{ utilisateur.id }}</td>
+                <td>{{ utilisateur.username }}</td>
+                <td>{{ utilisateur.email }}</td>
+
+                {#                <td>#}
+                {#                    <a href="{{ path('recette_show', {'id': recette.id}) }}">show</a>#}
+                {#                    <a href="{{ path('recette_edit', {'id': recette.id}) }}">edit</a>#}
+                {#                </td>#}
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {#    <a href="{{ path('recette_new') }}">Create new</a>#}
+{% endblock %}
