@@ -67,6 +67,16 @@
                         </ul>
                     </li>
 
+                    <li class="menu-title">Alimentation</li><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fas fa-drumstick-bite"></i>Recettes</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            {% for recette in app.session.get('recettes') %}
+                                <li><a href="{{ path('recette', {'slug': recette.slug}) }}">{{ recette.nom }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
                     {% for categorie in app.session.get('categories') %}
 
                         <li class="menu-title">{{ categorie.libelle }}</li><!-- /.menu-title -->

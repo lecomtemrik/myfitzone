@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Article index{% endblock %}
+
+{% block body %}
+    <!-- /.container -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Title -->
+                <h1 class="mt-4">{{ recette.nom }}</h1>
+
+                <hr>
+
+                <!-- Date/Time @todo gerer si null -->
+                <p>Mis à jour le : {{ recette.dateModification|date("d/m/Y", "Europe/Paris") }}</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <img class="img-fluid rounded" src="https://images.summitmedia-digital.com/yummyph/images/2020/01/17/miegorengrecipe.jpg" alt="">
+
+                <hr>
+
+                {% for ingredient in recette.ingredientRecettes %}
+                    <p>{{ ingredient.quantite}} x {{ ingredient.poids }}g {{ ingredient.ingredients.nom }}</p>
+                {% endfor %}
+
+                <hr>
+
+                <!-- Post Content -->
+                {{ recette.contenu|raw }}
+
+                <hr>
+
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Side Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">ads Widget</h5>
+                    <div class="card-body">
+                        <img class="img-fluid rounded" src="https://static.fnac-static.com/multimedia/Images/32/32/C0/E5/15056946-1505-1540-1/tsp20200507122905/Bandes-de-Resistance-Set-Elastiques-Artizlee-Kit-de-11-Acceoires-Musculation-Bandes-de-Fitne-Exercice-Elastiques-Yoga-Pilates-G.jpg" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+
+{% endblock %}

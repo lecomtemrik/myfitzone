@@ -22,8 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="update interfaces / security role / menu  + ajout souscategorie">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="ajout entité et relations Recette/Ingredient/IngredientRecette">
+      <change afterPath="$PROJECT_DIR$/src/Controller/TemplateRecetteController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/models/recette-template.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TemplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TemplateArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -243,7 +248,9 @@
       <workItem from="1615568703193" duration="1029000" />
       <workItem from="1615589426779" duration="8052000" />
       <workItem from="1615673203676" duration="3158000" />
-      <workItem from="1615761620644" duration="3328000" />
+      <workItem from="1615761620644" duration="4085000" />
+      <workItem from="1615829824874" duration="3719000" />
+      <workItem from="1615838389986" duration="2459000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -343,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615674001973</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ajout entité et relations Recette/Ingredient/IngredientRecette">
+      <created>1615766976640</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1615766976640</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,13 +390,18 @@
     <MESSAGE value="(updateDB) #7 Ajout Adresse / Profil" />
     <MESSAGE value="(tag-8) #8 ajout beelabtagbundle pour la gestion des tags des articles" />
     <MESSAGE value="update interfaces / security role / menu  + ajout souscategorie" />
-    <option name="LAST_COMMIT_MESSAGE" value="update interfaces / security role / menu  + ajout souscategorie" />
+    <MESSAGE value="ajout entité et relations Recette/Ingredient/IngredientRecette" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout entité et relations Recette/Ingredient/IngredientRecette" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614710564035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614710564035" />
+    <state x="653" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615830888355">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="653" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615830888355" />
     <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615592999202">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -403,10 +422,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1615674004041">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1615766978740">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615674004041" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615766978740" />
     <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1615598895420">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

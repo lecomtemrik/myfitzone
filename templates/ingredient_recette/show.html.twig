@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}IngredientRecette{% endblock %}
+
+{% block body %}
+    <h1>IngredientRecette</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ ingredient_recette.id }}</td>
+            </tr>
+            <tr>
+                <th>Quantite</th>
+                <td>{{ ingredient_recette.quantite }}</td>
+            </tr>
+            <tr>
+                <th>Poids</th>
+                <td>{{ ingredient_recette.poids }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('ingredient_recette_index') }}">back to list</a>
+
+    <a href="{{ path('ingredient_recette_edit', {'id': ingredient_recette.id}) }}">edit</a>
+
+    {{ include('ingredient_recette/_delete_form.html.twig') }}
+{% endblock %}
