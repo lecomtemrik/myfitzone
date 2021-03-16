@@ -17,11 +17,6 @@ class Adresse
      */
     private $id;
 
-    /**
-     * @ORM\OneToOne(targetEntity=Utilisateur::class, cascade={"persist", "remove"} ,inversedBy="adresse")
-     * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id", nullable=true)
-     */
-    protected $utilisateur;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -42,6 +37,11 @@ class Adresse
      * @ORM\Column(type="integer", nullable=true)
      */
     private $codePostal;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Utilisateur::class, mappedBy="adresse", cascade={"persist", "remove"})
+     */
+    private $utilisateur;
 
     public function getId(): ?int
     {
@@ -92,6 +92,28 @@ class Adresse
     public function setCodePostal(?int $codePostal): self
     {
         $this->codePostal = $codePostal;
+
+        return $this;
+    }
+
+    public function getUtilisateur(): ?Utilisateur
+    {
+        return $this->utilisateur;
+    }
+
+    public function setUtilisateur(?Utilisateur $utilisateur): self
+    {
+        // unset the owning side of the relation if necessary
+        if ($utilisateur === null && $this->utilisateur !== null) {
+            $this->utilisateur->setAdresse(null);
+        }
+
+        // set the owning side of the relation if necessary
+        if ($utilisateur !== null && $utilisateur->getAdresse() !== $this) {
+            $utilisateur->setAdresse($this);
+        }
+
+        $this->utilisateur = $utilisateur;
 
         return $this;
     }

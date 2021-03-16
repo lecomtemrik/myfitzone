@@ -43,10 +43,9 @@ class Profil
     private $pseudo;
 
     /**
-     * @ORM\OneToOne(targetEntity=Utilisateur::class, cascade={"persist", "remove"} ,inversedBy="profil")
-     * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id", nullable=true)
+     * @ORM\OneToOne(targetEntity=Utilisateur::class, mappedBy="profil", cascade={"persist", "remove"})
      */
-    protected $utilisateur;
+    private $utilisateur;
 
     public function getId(): ?int
     {
@@ -109,6 +108,28 @@ class Profil
     public function setPseudo(?string $pseudo): self
     {
         $this->pseudo = $pseudo;
+
+        return $this;
+    }
+
+    public function getUtilisateur(): ?Utilisateur
+    {
+        return $this->utilisateur;
+    }
+
+    public function setUtilisateur(?Utilisateur $utilisateur): self
+    {
+        // unset the owning side of the relation if necessary
+        if ($utilisateur === null && $this->utilisateur !== null) {
+            $this->utilisateur->setProfil(null);
+        }
+
+        // set the owning side of the relation if necessary
+        if ($utilisateur !== null && $utilisateur->getProfil() !== $this) {
+            $utilisateur->setProfil($this);
+        }
+
+        $this->utilisateur = $utilisateur;
 
         return $this;
     }

@@ -23,18 +23,42 @@ class Utilisateur extends BaseUser
     protected $id;
 
     /**
-     * @ORM\OneToOne(targetEntity=Profil::class, mappedBy="utilisateur", cascade="all")
+     * @ORM\OneToOne(targetEntity=Profil::class, inversedBy="utilisateur", cascade={"persist", "remove"})
      */
-    protected $profil;
+    private $profil;
 
     /**
-     * @ORM\OneToOne(targetEntity=Adresse::class, mappedBy="utilisateur", cascade="all")
+     * @ORM\OneToOne(targetEntity=Adresse::class, inversedBy="utilisateur", cascade={"persist", "remove"})
      */
-    protected $adresse;
+    private $adresse;
 
     public function __construct()
     {
         parent::__construct();
         // your own logic
+    }
+
+    public function getProfil(): ?Profil
+    {
+        return $this->profil;
+    }
+
+    public function setProfil(?Profil $profil): self
+    {
+        $this->profil = $profil;
+
+        return $this;
+    }
+
+    public function getAdresse(): ?Adresse
+    {
+        return $this->adresse;
+    }
+
+    public function setAdresse(?Adresse $adresse): self
+    {
+        $this->adresse = $adresse;
+
+        return $this;
     }
 }
