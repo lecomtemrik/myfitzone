@@ -22,6 +22,7 @@ security:
             form_login:
                 provider: nucleos_userbundle
                 csrf_token_generator: security.csrf.token_manager
+                success_handler: redirect.after.login
 
             logout: true
             anonymous: true

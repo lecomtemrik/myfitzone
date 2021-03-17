@@ -22,8 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="ajout compte =&gt; controller/template + update onetoone de Utilisateur/profil/adresse">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="crud adresse/profil">
+      <change afterPath="$PROJECT_DIR$/src/Service/AfterLoginRedirection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/_sidebar-admin.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -247,7 +250,7 @@
       <workItem from="1615829824874" duration="3719000" />
       <workItem from="1615838389986" duration="10243000" />
       <workItem from="1615915857299" duration="1372000" />
-      <workItem from="1615927073862" duration="1218000" />
+      <workItem from="1615927073862" duration="6052000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -375,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615855902024</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="crud adresse/profil">
+      <created>1615936614302</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1615936614302</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +422,8 @@
     <MESSAGE value="template recette + ajout dans sidebar + crud recette/ingredient/ingredientRecette" />
     <MESSAGE value="lister utilisateur =&gt; controller/template" />
     <MESSAGE value="ajout compte =&gt; controller/template + update onetoone de Utilisateur/profil/adresse" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout compte =&gt; controller/template + update onetoone de Utilisateur/profil/adresse" />
+    <MESSAGE value="crud adresse/profil" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud adresse/profil" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614710564035">
@@ -443,10 +454,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1615855903832">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1615936616023">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615855903832" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615936616023" />
     <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1615598895420">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
