@@ -18,4 +18,5 @@ return [
     Nucleos\ProfileBundle\NucleosProfileBundle::class => ['all' => true],
     FOS\CKEditorBundle\FOSCKEditorBundle::class => ['all' => true],
     Beelab\TagBundle\BeelabTagBundle::class => ['all' => true],
+    Vich\UploaderBundle\VichUploaderBundle::class => ['all' => true],
 ];
