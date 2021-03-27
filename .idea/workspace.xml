@@ -22,17 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="interface admin">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="bundle vich upload images">
+      <change afterPath="$PROJECT_DIR$/config/packages/knp_gaufrette.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ImageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ImageType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/image/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/_form.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +171,15 @@
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/gaufrette" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-gaufrette-bundle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oP3SNC55jiMER5Ze34hCMgksUX" />
@@ -261,7 +275,15 @@
       <workItem from="1615915857299" duration="1372000" />
       <workItem from="1615927073862" duration="6156000" />
       <workItem from="1616000975489" duration="1935000" />
-      <workItem from="1616007282064" duration="2686000" />
+      <workItem from="1616007282064" duration="9483000" />
+      <workItem from="1616090525011" duration="9640000" />
+      <workItem from="1616282547300" duration="3017000" />
+      <workItem from="1616442707555" duration="7294000" />
+      <workItem from="1616517902367" duration="2597000" />
+      <workItem from="1616540288884" duration="5922000" />
+      <workItem from="1616626049023" duration="1218000" />
+      <workItem from="1616710489252" duration="604000" />
+      <workItem from="1616798251246" duration="1559000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -410,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616003468876</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="bundle vich upload images">
+      <created>1616012353627</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1616012353627</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +479,8 @@
     <MESSAGE value="crud adresse/profil" />
     <MESSAGE value="redirection after login" />
     <MESSAGE value="interface admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="interface admin" />
+    <MESSAGE value="bundle vich upload images" />
+    <option name="LAST_COMMIT_MESSAGE" value="bundle vich upload images" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614710564035">
@@ -461,10 +491,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="653" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615830888355" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615840794912">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616459772661">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615840794912" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616459772661" />
     <state x="736" y="452" key="ComposerInitDialogKey" timestamp="1613781679085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -481,13 +511,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1616003470227">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1616012355239">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616003470227" />
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1615598895420">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616012355239" />
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1616113117819">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615598895420" />
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616113117819" />
   </component>
 </project>

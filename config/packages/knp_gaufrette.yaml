@@ -1,0 +1,11 @@
+knp_gaufrette:
+  stream_wrapper: ~
+
+  adapters:
+    article_image:
+      local:
+        directory: '%kernel.project_dir%/public/images/articles'
+
+  filesystems:
+    artimage_fs:
+      adapter: article_image
