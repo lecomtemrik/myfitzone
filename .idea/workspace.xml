@@ -22,22 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="bundle vich upload images">
-      <change afterPath="$PROJECT_DIR$/config/packages/knp_gaufrette.yaml" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="configuration d'upload d'image avec vich et gaufrette #6">
       <change afterPath="$PROJECT_DIR$/src/Controller/ImageController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Form/ImageType.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/image/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/knp_gaufrette.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/knp_gaufrette.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProfilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProfilController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Recette.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Recette.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProfilType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProfilType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RecetteType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RecetteType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compte/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/models/article-template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/article-template.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/models/recette-template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/recette-template.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,25 +193,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/bundles/NucleosProfileBundle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/models" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosProfileBundle" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle\views" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\NucleosUser" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\nucleos" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public\style" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\default" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\models" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\models" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\compte" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosProfileBundle" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -283,7 +283,8 @@
       <workItem from="1616540288884" duration="5922000" />
       <workItem from="1616626049023" duration="1218000" />
       <workItem from="1616710489252" duration="604000" />
-      <workItem from="1616798251246" duration="1559000" />
+      <workItem from="1616798251246" duration="1772000" />
+      <workItem from="1616840503331" duration="18707000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -439,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616012353627</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="configuration d'upload d'image avec vich et gaufrette #6">
+      <created>1616805407710</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1616805407710</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +488,8 @@
     <MESSAGE value="redirection after login" />
     <MESSAGE value="interface admin" />
     <MESSAGE value="bundle vich upload images" />
-    <option name="LAST_COMMIT_MESSAGE" value="bundle vich upload images" />
+    <MESSAGE value="configuration d'upload d'image avec vich et gaufrette #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuration d'upload d'image avec vich et gaufrette #6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614710564035">
@@ -491,10 +500,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="653" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615830888355" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616459772661">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616891699088">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616459772661" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616891699088" />
     <state x="736" y="452" key="ComposerInitDialogKey" timestamp="1613781679085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

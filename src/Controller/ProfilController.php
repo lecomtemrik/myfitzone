@@ -63,10 +63,12 @@ class ProfilController extends AbstractController
      */
     public function edit(Request $request, Profil $profil): Response
     {
+        $this->denyAccessUnlessGranted('EDIT', $profil);
         $form = $this->createForm(ProfilType::class, $profil);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $profil->updatedTimestamps();
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('profil_index');
@@ -83,6 +85,7 @@ class ProfilController extends AbstractController
      */
     public function delete(Request $request, Profil $profil): Response
     {
+        $this->denyAccessUnlessGranted('DELETE', $profil);
         if ($this->isCsrfTokenValid('delete'.$profil->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($profil);

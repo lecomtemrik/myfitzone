@@ -5,7 +5,17 @@ knp_gaufrette:
     article_image:
       local:
         directory: '%kernel.project_dir%/public/images/articles'
+    recette_image:
+      local:
+        directory: '%kernel.project_dir%/public/images/recettes'
+    profil_image:
+      local:
+        directory: '%kernel.project_dir%/public/images/profils/avatars'
 
   filesystems:
-    artimage_fs:
+    article_image_fs:
       adapter: article_image
+    recette_image_fs:
+      adapter: recette_image
+    profil_image_fs:
+      adapter: profil_image

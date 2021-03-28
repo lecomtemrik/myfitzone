@@ -45,7 +45,6 @@ class Article implements TaggableInterface
      */
     private $imageName;
 
-
     /**
      * @ORM\Column(type="string", length=255)
      */

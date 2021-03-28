@@ -5,4 +5,20 @@ vich_uploader:
     mappings:
         article_image:
             uri_prefix: /images/articles
-            upload_destination: artimage_fs
+            upload_destination: article_image_fs
+            namer:
+                service: Vich\UploaderBundle\Naming\PropertyNamer
+                options: {property: 'slug'}
+
+        recette_image:
+            uri_prefix: /images/recettes
+            upload_destination: recette_image_fs
+            namer:
+                service: Vich\UploaderBundle\Naming\PropertyNamer
+                options: { property: 'slug' }
+
+        profil_image:
+            uri_prefix: /images/profils/avatars
+            upload_destination: profil_image_fs
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+
