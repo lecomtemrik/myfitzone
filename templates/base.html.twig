@@ -150,7 +150,7 @@
 
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="{{ asset('admin.jpg') }}" alt="User Avatar">
+                            <img class="user-avatar rounded-circle" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb') }}" alt="User Avatar">
                         </a>
 
                         <div class="user-menu dropdown-menu">
