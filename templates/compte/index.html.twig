@@ -9,7 +9,7 @@
         <div class="row justify-content-md-center">
             <div class="col col-lg-12">
                 <div class="text-center">
-                    <img class="rounded img-thumbnail float-left" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') }}" alt="" style="width: 100px; height: 100px">
+                    <img class="rounded img-thumbnail float-left" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb')  }}" alt="" style="width: 100px; height: 100px">
 {#                    <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" style="width: 100px; height: 100px" class="rounded img-thumbnail float-left" alt="...">#}
                 </div>
             </div>

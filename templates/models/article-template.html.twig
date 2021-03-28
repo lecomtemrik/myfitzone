@@ -23,7 +23,7 @@
 
                 <!-- Preview Image -->
 {#                <img class="img-fluid rounded" src="https://medias.go-sport.com/wysiwyg/Catalogue_V2/Vitrines/Fitness/750x300_vitrine_rayon_fitness_training.png" alt="">#}
-                <img class="img-fluid rounded" src="{{ vich_uploader_asset(article, 'imageFile') }}" alt="">
+                <img class="img-fluid rounded" src="{{ vich_uploader_asset(article, 'imageFile') | imagine_filter('cover') }}" alt="">
 
                 <hr>
 

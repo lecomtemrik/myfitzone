@@ -22,19 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="configuration d'upload d'image avec vich et gaufrette #6">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="ProfilVoter pour gérer les accès/ configuration upload image pour recette et profil #6">
       <change afterPath="$PROJECT_DIR$/src/Controller/ImageController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Form/ImageType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/image/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/knp_gaufrette.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/knp_gaufrette.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProfilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProfilController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Recette.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Recette.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProfilType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProfilType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RecetteType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RecetteType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compte/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/models/article-template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/article-template.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/models/recette-template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/models/recette-template.html.twig" afterDir="false" />
@@ -180,6 +178,8 @@
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oP3SNC55jiMER5Ze34hCMgksUX" />
@@ -284,7 +284,8 @@
       <workItem from="1616626049023" duration="1218000" />
       <workItem from="1616710489252" duration="604000" />
       <workItem from="1616798251246" duration="1772000" />
-      <workItem from="1616840503331" duration="18707000" />
+      <workItem from="1616840503331" duration="19096000" />
+      <workItem from="1616922111578" duration="3356000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -447,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616805407710</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ProfilVoter pour gérer les accès/ configuration upload image pour recette et profil #6">
+      <created>1616892666062</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1616892666062</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +497,8 @@
     <MESSAGE value="interface admin" />
     <MESSAGE value="bundle vich upload images" />
     <MESSAGE value="configuration d'upload d'image avec vich et gaufrette #6" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuration d'upload d'image avec vich et gaufrette #6" />
+    <MESSAGE value="ProfilVoter pour gérer les accès/ configuration upload image pour recette et profil #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="ProfilVoter pour gérer les accès/ configuration upload image pour recette et profil #6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614710564035">
@@ -520,10 +529,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1616012355239">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1616892667804">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616012355239" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616892667804" />
     <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1616113117819">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
