@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="social login oauth2 bundle paramétrage de connexion avec google et préparation connexion facebook  #6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="ramseyuuid bundle pour la génération d'uuid #9" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -287,7 +285,7 @@
       <workItem from="1617128262442" duration="11120000" />
       <workItem from="1617208222894" duration="15698000" />
       <workItem from="1617290014155" duration="722000" />
-      <workItem from="1617304591039" duration="7348000" />
+      <workItem from="1617304591039" duration="7651000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -478,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617322266580</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ramseyuuid bundle pour la génération d'uuid #9">
+      <created>1617322964634</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1617322964634</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +502,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Doctrine #1 - Création du controller article" />
     <MESSAGE value="modif base" />
     <MESSAGE value="FOSUserBundle #2 Branch first commit" />
     <MESSAGE value="Correction de la responsivité + ajustement modèle d'article" />
@@ -522,7 +526,8 @@
     <MESSAGE value="liip bundle pour la gestion de la taille des images  #6" />
     <MESSAGE value="dernier commit avant merge  #6" />
     <MESSAGE value="social login oauth2 bundle paramétrage de connexion avec google et préparation connexion facebook  #6" />
-    <option name="LAST_COMMIT_MESSAGE" value="social login oauth2 bundle paramétrage de connexion avec google et préparation connexion facebook  #6" />
+    <MESSAGE value="ramseyuuid bundle pour la génération d'uuid #9" />
+    <option name="LAST_COMMIT_MESSAGE" value="ramseyuuid bundle pour la génération d'uuid #9" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -553,10 +558,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1617322304910">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1617322967750">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1617322304910" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1617322967750" />
     <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1617227369778">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
