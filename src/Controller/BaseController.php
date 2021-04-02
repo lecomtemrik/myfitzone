@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Entity\Categorie;
 use App\Repository\ArticleRepository;
 use App\Repository\CategorieRepository;
 use App\Repository\RecetteRepository;

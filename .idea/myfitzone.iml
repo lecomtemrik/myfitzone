@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/aws/aws-sdk-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/beelab/tag-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/cache" />
@@ -34,9 +35,13 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/knplabs/gaufrette" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/knplabs/knp-gaufrette-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/knplabs/knp-menu" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/knpuniversity/oauth2-client-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laminas/laminas-code" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laminas/laminas-eventmanager" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/league/oauth2-client" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/league/oauth2-facebook" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/league/oauth2-google" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/liip/imagine-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mtdowling/jmespath.php" />
@@ -52,6 +57,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/link" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ramsey/uuid-doctrine" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sensio/framework-extra-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/asset" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/browser-kit" />

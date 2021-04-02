@@ -22,13 +22,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="liip bundle pour la gestion de la taille des images  #6">
-      <change afterPath="$PROJECT_DIR$/src/Controller/ImageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ImageType.php" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="dernier commit avant merge  #6">
+      <change afterPath="$PROJECT_DIR$/src/Controller/Social/FacebookController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Social/GoogleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/GoogleAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Utilisateur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Security/login_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/NucleosUserBundle/Security/login_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compte/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +184,14 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
       <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knpuniversity/oauth2-client-bundle" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-client" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-google" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-facebook" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid-doctrine" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oP3SNC55jiMER5Ze34hCMgksUX" />
@@ -279,7 +298,12 @@
       <workItem from="1616798251246" duration="1772000" />
       <workItem from="1616840503331" duration="19096000" />
       <workItem from="1616922111578" duration="5131000" />
-      <workItem from="1616957778408" duration="2058000" />
+      <workItem from="1616957778408" duration="3222000" />
+      <workItem from="1617033088304" duration="7711000" />
+      <workItem from="1617128262442" duration="11120000" />
+      <workItem from="1617208222894" duration="15698000" />
+      <workItem from="1617290014155" duration="722000" />
+      <workItem from="1617304591039" duration="6580000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -456,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616927898236</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="dernier commit avant merge  #6">
+      <created>1616969765940</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1616969765940</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial" />
     <MESSAGE value="Doctrine #1 - Création des entités Article/Categorie/Utilisateur" />
     <MESSAGE value="Doctrine #1 - Création du controller article" />
     <MESSAGE value="modif base" />
@@ -500,13 +530,14 @@
     <MESSAGE value="configuration d'upload d'image avec vich et gaufrette #6" />
     <MESSAGE value="ProfilVoter pour gérer les accès/ configuration upload image pour recette et profil #6" />
     <MESSAGE value="liip bundle pour la gestion de la taille des images  #6" />
-    <option name="LAST_COMMIT_MESSAGE" value="liip bundle pour la gestion de la taille des images  #6" />
+    <MESSAGE value="dernier commit avant merge  #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="dernier commit avant merge  #6" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1614710564035">
+    <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="753" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1614710564035" />
+    <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1617236053177" />
     <state x="653" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615830888355">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -531,13 +562,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1616927922959">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1616969767435">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616927922959" />
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1616113117819">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616969767435" />
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1617227369778">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1616113117819" />
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1617227369778" />
   </component>
 </project>

@@ -9,8 +9,13 @@
         <div class="row justify-content-md-center">
             <div class="col col-lg-12">
                 <div class="text-center">
-                    <img class="rounded img-thumbnail float-left" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb')  }}" alt="" style="width: 100px; height: 100px">
-{#                    <img src="https://www.attendit.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg" style="width: 100px; height: 100px" class="rounded img-thumbnail float-left" alt="...">#}
+                    {% if app.user.profil.imageName == null %}
+                        <img class="user-avatar rounded-circle" src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
+                    {% elseif 'https' in app.user.profil.imageName %}
+                        <img class="user-avatar rounded-circle" src="{{ app.user.profil.imageName }}">
+                    {% else %}
+                        <img class="user-avatar rounded-circle" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb') }}">
+                    {% endif %}
                 </div>
             </div>
         </div>

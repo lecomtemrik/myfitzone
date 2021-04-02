@@ -150,7 +150,13 @@
 
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb') }}" alt="User Avatar">
+                            {% if app.user.profil.imageName == null %}
+                                <img class="user-avatar rounded-circle" src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
+                            {% elseif 'https' in app.user.profil.imageName %}
+                                <img class="user-avatar rounded-circle" src="{{ app.user.profil.imageName }}">
+                            {% else %}
+                                <img class="user-avatar rounded-circle" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb') }}">
+                            {% endif %}
                         </a>
 
                         <div class="user-menu dropdown-menu">
@@ -164,6 +170,7 @@
                         </div>
                     </div>
                 {% else %}
+{#                    <a href="{{ path('connect_google_start') }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Google</a>#}
                     <a href="{{ path('nucleos_user_security_login') }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Connexion</a>
                 {% endif %}
 

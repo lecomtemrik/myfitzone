@@ -7,11 +7,12 @@
 
         <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Connexion</h1>
 
+{#        <div class="social-login">#}
+{#                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i>  Facebook</span> </button>#}
+{#        </div>#}
         <div class="social-login">
-                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i>  Facebook</span> </button>
-        </div>
-        <div class="social-login">
-                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Google+</span> </button>
+{#                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Google+</span> </button>#}
+                <a href="{{ path('connect_google_start') }}" class="btn google-btn social-btn" role="button" aria-pressed="true"><span><i class="fab fa-google-plus-g"></i> Google+</span></a>
         </div>
 
         <hr>
