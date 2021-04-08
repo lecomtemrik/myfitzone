@@ -2,10 +2,12 @@
 
 namespace App\Security;
 
+use App\Controller\Mailer\MailerController;
 use App\Entity\Adresse;
 use App\Entity\Profil;
 use App\Entity\Utilisateur;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\Response;
 use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
 use KnpU\OAuth2ClientBundle\Security\Authenticator\SocialAuthenticator;
 use League\OAuth2\Client\Provider\GoogleUser;
@@ -23,13 +25,17 @@ class GoogleAuthenticator extends SocialAuthenticator
     private $em;
     private $router;
     private $passwordEncoder;
+    private $mailer;
+    private $mailerController;
 
-    public function __construct(ClientRegistry $clientRegistry, EntityManagerInterface $em, RouterInterface $router, UserPasswordEncoderInterface $passwordEncoder)
+    public function __construct(ClientRegistry $clientRegistry, EntityManagerInterface $em, RouterInterface $router, UserPasswordEncoderInterface $passwordEncoder, \Swift_Mailer $mailer, MailerController $mailerController)
     {
         $this->clientRegistry = $clientRegistry;
         $this->em = $em;
         $this->router = $router;
         $this->passwordEncoder = $passwordEncoder;
+        $this->mailer = $mailer;
+        $this->mailerController = $mailerController;
 //        $client = new Client(['verify' => false ]);
     }
 
@@ -52,6 +58,19 @@ class GoogleAuthenticator extends SocialAuthenticator
     public function pwEncode($user){
         return $this->passwordEncoder->encodePassword($user, Uuid::uuid4());
     }
+
+//    public function sendingMail($destination, $name) : Response{
+//        $message = (new \Swift_Message('Hello Email'))
+//            ->setFrom('myfitzonewebsite@gmail.com')
+//            ->setTo($destination)
+//            ->setBody($this->render(
+//            // templates/hello/email.txt.twig
+//                'emails/welcome.html.twig',
+//                ['name' => $name])
+//            )
+//        ;
+//        $this->mailer->send($message);
+//    }
 
     /**
      * @param AccessToken $credentials
@@ -87,8 +106,8 @@ class GoogleAuthenticator extends SocialAuthenticator
             $this->em->persist($profil);
             $this->em->persist($adresse);
             $this->em->flush();
+            $this->mailerController->sendingMail($googleUser->getEmail(), $googleUser->getFirstName());
         }
-
         return $user;
     }
 

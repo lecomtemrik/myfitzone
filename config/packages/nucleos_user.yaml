@@ -5,6 +5,10 @@ nucleos_user:
 
     from_email: '%env(MAIL_SENDER)%'
 
+#    resetting:
+#        email:
+#            from_email: '%env(MAIL_SENDER)%'
+
     user_class: 'App\Entity\Utilisateur'
 
 #    group:
