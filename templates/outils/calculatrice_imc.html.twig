@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}IMC{% endblock %}
+
+{% block body %}
+
+    <h1>IMC</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn btn-outline-primary">{{ button_label|default('Calculer') }}</button>
+    {{ form_end(form) }}
+
+    {% if imc == null %}
+        <h1>0</h1>
+    {% else %}
+        <h1>IMC = {{ imc }} </h1>
+    {% endif %}
+
+{% endblock %}
