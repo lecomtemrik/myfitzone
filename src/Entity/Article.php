@@ -65,7 +65,7 @@ class Article implements TaggableInterface
     private $description;
 
     /**
-     * @ORM\Column(type="text", length=255)
+     * @ORM\Column(type="text")
      */
     private $contenu;
 

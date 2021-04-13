@@ -37,6 +37,11 @@ class Mesure
      */
     private $poids;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Utilisateur::class, inversedBy="mesures")
+     */
+    private $utilisateur;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class Mesure
     public function setPoids(int $poids): self
     {
         $this->poids = $poids;
+
+        return $this;
+    }
+
+    public function getUtilisateur(): ?Utilisateur
+    {
+        return $this->utilisateur;
+    }
+
+    public function setUtilisateur(?Utilisateur $utilisateur): self
+    {
+        $this->utilisateur = $utilisateur;
 
         return $this;
     }

@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UtilisateurRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Nucleos\UserBundle\Model\User as BaseUser;
 
@@ -32,10 +34,22 @@ class Utilisateur extends BaseUser
      */
     private $adresse;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Mesure::class, mappedBy="utilisateur")
+     */
+    private $mesures;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Mensuration::class, mappedBy="utilisateur")
+     */
+    private $mensurations;
+
     public function __construct()
     {
         parent::__construct();
         // your own logic
+        $this->mesures = new ArrayCollection();
+        $this->mensurations = new ArrayCollection();
     }
 
     public function getProfil(): ?Profil
@@ -58,6 +72,66 @@ class Utilisateur extends BaseUser
     public function setAdresse(?Adresse $adresse): self
     {
         $this->adresse = $adresse;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Mesure[]
+     */
+    public function getMesures(): Collection
+    {
+        return $this->mesures;
+    }
+
+    public function addMesure(Mesure $mesure): self
+    {
+        if (!$this->mesures->contains($mesure)) {
+            $this->mesures[] = $mesure;
+            $mesure->setUtilisateur($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMesure(Mesure $mesure): self
+    {
+        if ($this->mesures->removeElement($mesure)) {
+            // set the owning side to null (unless already changed)
+            if ($mesure->getUtilisateur() === $this) {
+                $mesure->setUtilisateur(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Mensuration[]
+     */
+    public function getMensurations(): Collection
+    {
+        return $this->mensurations;
+    }
+
+    public function addMensuration(Mensuration $mensuration): self
+    {
+        if (!$this->mensurations->contains($mensuration)) {
+            $this->mensurations[] = $mensuration;
+            $mensuration->setUtilisateur($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMensuration(Mensuration $mensuration): self
+    {
+        if ($this->mensurations->removeElement($mensuration)) {
+            // set the owning side to null (unless already changed)
+            if ($mensuration->getUtilisateur() === $this) {
+                $mensuration->setUtilisateur(null);
+            }
+        }
 
         return $this;
     }

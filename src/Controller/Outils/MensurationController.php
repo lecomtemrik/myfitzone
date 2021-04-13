@@ -2,12 +2,8 @@
 
 namespace App\Controller\Outils;
 
-use App\Entity\Adresse;
 use App\Entity\Mensuration;
-use App\Form\AdresseType;
 use App\Form\MensurationType;
-use App\Repository\AdresseRepository;
-use App\Repository\MensurationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -26,11 +22,13 @@ class MensurationController extends AbstractController
     public function new(Request $request): Response
     {
         $mensuration = new Mensuration();
+        $utilisateur = $this->getUser();
         $form = $this->createForm(MensurationType::class, $mensuration);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
+            $mensuration->setUtilisateur($utilisateur);
             $entityManager->persist($mensuration);
             $entityManager->flush();
 

@@ -1,7 +1,7 @@
 nucleos_profile:
   registration:
     confirmation:
-      enabled: true
+      enabled: false
       from_email:  '%env(MAIL_SENDER)%'
 #      from_email:  myfitzonewebsite@gmail.com
 

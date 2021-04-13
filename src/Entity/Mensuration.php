@@ -52,6 +52,11 @@ class Mensuration
      */
     private $Mollets;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Utilisateur::class, inversedBy="mensurations")
+     */
+    private $utilisateur;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -137,6 +142,18 @@ class Mensuration
     public function setMollets(?int $Mollets): self
     {
         $this->Mollets = $Mollets;
+
+        return $this;
+    }
+
+    public function getUtilisateur(): ?Utilisateur
+    {
+        return $this->utilisateur;
+    }
+
+    public function setUtilisateur(?Utilisateur $utilisateur): self
+    {
+        $this->utilisateur = $utilisateur;
 
         return $this;
     }
