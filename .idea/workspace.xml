@@ -22,17 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="calculatrice imc/img + mensuration #11">
-      <change afterPath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="Mensuration/Mesure/Utilisateur =&gt; ManyToOne/OneToMany #11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/nucleos_profile.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/nucleos_profile.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Mensuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Mensuration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Mesure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Mesure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Utilisateur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +308,8 @@
       <workItem from="1618097947743" duration="31000" />
       <workItem from="1618242379913" duration="850000" />
       <workItem from="1618257020309" duration="8296000" />
-      <workItem from="1618327229892" duration="2971000" />
+      <workItem from="1618327229892" duration="3051000" />
+      <workItem from="1618338966301" duration="8806000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -531,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618266100464</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Mensuration/Mesure/Utilisateur =&gt; ManyToOne/OneToMany #11">
+      <created>1618330289008</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1618330289008</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +554,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UserManagement #3 override interface security/resetting/changepassword/layout" />
     <MESSAGE value="access controle interface admin" />
     <MESSAGE value="merge master and userManagement" />
     <MESSAGE value="crud categorie / nucleos_profile / menu / article template / interface icon" />
@@ -575,7 +578,8 @@
     <MESSAGE value="Premier commit test branch mailer #10" />
     <MESSAGE value="Email template + installation SwiftMailer #10" />
     <MESSAGE value="calculatrice imc/img + mensuration #11" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculatrice imc/img + mensuration #11" />
+    <MESSAGE value="Mensuration/Mesure/Utilisateur =&gt; ManyToOne/OneToMany #11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mensuration/Mesure/Utilisateur =&gt; ManyToOne/OneToMany #11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -606,10 +610,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1618266102176">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1618330290352">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1618266102176" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1618330290352" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1618259757079">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

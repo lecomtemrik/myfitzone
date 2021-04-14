@@ -10,7 +10,68 @@
     <button class="btn">{{ button_label|default('Enregistrer') }}</button>
     {{ form_end(form) }}
 
+    {# @Todo: gérer mensuration null#}
 
-    <a href="{{ path('profil_index') }}">back to list</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Cou</th>
+            <th scope="col">Epaules</th>
+            <th scope="col">Poitrine</th>
+            <th scope="col">Bras</th>
+            <th scope="col">Tour de taille</th>
+            <th scope="col">cuisses</th>
+            <th scope="col">Mollets</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>{{ lastMensuration.Cou }}</th>
+            <th>{{ lastMensuration.Epaules }}</th>
+            <th>{{ lastMensuration.Poitrine }}</th>
+            <th>{{ lastMensuration.Bras }}</th>
+            <th>{{ lastMensuration.Tourdetaille }}</th>
+            <th>{{ lastMensuration.Cuisses }}</th>
+            <th>{{ lastMensuration.Mollets }}</th>
+        </tr>
+        </tbody>
+    </table>
+
+    <div style="width: 50%; height: 50%">
+        <canvas id="myChart" width="200" height="50"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        var ctx = document.getElementById('myChart');
+        var ar = {{ mensurationArr|json_encode }}
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['janvier', 'fevrier','mars'],
+                datasets: [{
+                    label: 'Bras',
+                    data: ar,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                }
+            }
+        });
+    </script>
 
 {% endblock %}

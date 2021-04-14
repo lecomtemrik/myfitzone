@@ -4,6 +4,7 @@ namespace App\Controller\Outils;
 
 use App\Entity\Mensuration;
 use App\Form\MensurationType;
+use App\Repository\MensurationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,10 +20,17 @@ class MensurationController extends AbstractController
     /**
      * @Route("/", name="mensuration_index", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(Request $request, MensurationRepository $mensurationRepository): Response
     {
         $mensuration = new Mensuration();
         $utilisateur = $this->getUser();
+        $mensurationUtilisateur = $mensurationRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
+        $lastMensuration = end($mensurationUtilisateur);
+        foreach ($mensurationUtilisateur as $item){
+            $mensurationArray[] = $item->getBras();
+        }
+        dump($mensurationArray);
+
         $form = $this->createForm(MensurationType::class, $mensuration);
         $form->handleRequest($request);
 
@@ -32,11 +40,13 @@ class MensurationController extends AbstractController
             $entityManager->persist($mensuration);
             $entityManager->flush();
 
-            return $this->redirectToRoute('adresse_index');
+            return $this->redirectToRoute('mensuration_index');
         }
 
         return $this->render('outils/mensuration.html.twig', [
-            'mensuration' => $mensuration,
+            'mensurations' => $mensurationArray,
+            'mensurationArr' => [35,40,45],
+            'lastMensuration' => $lastMensuration,
             'form' => $form->createView(),
         ]);
     }

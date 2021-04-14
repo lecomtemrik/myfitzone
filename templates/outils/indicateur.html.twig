@@ -10,7 +10,25 @@
     <button class="btn">{{ button_label|default('Enregistrer') }}</button>
     {{ form_end(form) }}
 
+    {# @Todo: gérer mesure null#}
 
-    <a href="{{ path('profil_index') }}">back to list</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Sexe</th>
+            <th scope="col">Age</th>
+            <th scope="col">Taille</th>
+            <th scope="col">Poids</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>{{ lastMesure.sexe }}</th>
+            <th>{{ lastMesure.age }}</th>
+            <th>{{ lastMesure.taille }}</th>
+            <th>{{ lastMesure.poids }}</th>
+        </tr>
+        </tbody>
+    </table>
 
 {% endblock %}
