@@ -45,7 +45,7 @@ class MensurationController extends AbstractController
 
         return $this->render('outils/mensuration.html.twig', [
             'mensurations' => $mensurationArray,
-            'mensurationArr' => [35,40,45],
+            'mensurationArr' => [35,40,45,50,60],
             'lastMensuration' => $lastMensuration,
             'form' => $form->createView(),
         ]);

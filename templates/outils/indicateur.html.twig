@@ -1,34 +1,140 @@
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
 {% extends 'base.html.twig' %}
 
 {% block title %}Indicateur{% endblock %}
 
 {% block body %}
-    <h1>Indicateur</h1>
 
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Enregistrer') }}</button>
-    {{ form_end(form) }}
+    <!-- Breadcrumbs-->
+    <div class="breadcrumbs">
+        <div class="breadcrumbs-inner">
+            <div class="row m-0">
+                <div class="col-sm-4">
+                    <div class="page-header float-left">
+                        <div class="page-title">
+                            <h1>Indicateur</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="page-header float-right">
+                        <div class="page-title">
+                            <ol class="breadcrumb text-right">
+                                <li><a href="#">Outils</a></li>
+                                <li><a href="#">Suivi</a></li>
+                                <li class="active">Indicateur</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.breadcrumbs-->
+    <!-- Content -->
+    <div class="content">
+        <!-- Animated -->
+        <div class="animated fadeIn">
 
-    {# @Todo: gérer mesure null#}
+            <div class="card">
+                <div class="card-header">
+                    Mes mesures :
+                </div>
+                <div class="card-body">
+                    {{ form_start(form) }}
+                    <div class="container">
+                        <div class="row row-cols-4">
+                            <div class="col">{{ form_label(form.sexe) }}{{ form_widget(form.sexe) }}</div>
+                            <div class="col">{{ form_label(form.age) }}{{ form_widget(form.age) }}</div>
+                            <div class="col">{{ form_label(form.taille) }}{{ form_widget(form.taille) }}</div>
+                            <div class="col">{{ form_label(form.poids) }}{{ form_widget(form.poids) }}</div>
+                            <button class="btn">{{ button_label|default('Enregistrer') }}</button>
+                        </div>
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
 
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">Sexe</th>
-            <th scope="col">Age</th>
-            <th scope="col">Taille</th>
-            <th scope="col">Poids</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th>{{ lastMesure.sexe }}</th>
-            <th>{{ lastMesure.age }}</th>
-            <th>{{ lastMesure.taille }}</th>
-            <th>{{ lastMesure.poids }}</th>
-        </tr>
-        </tbody>
-    </table>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-white bg-flat-color-1">
+                        <div class="card-body">
+                            <div class="card-left pt-1 float-left">
+                                <h3 class="mb-0 fw-r">
+                                    <span class="count">23</span><br>
+                                </h3>
+                                <p class="text-light mt-1 m-0">IMC</p>
+                            </div><!-- /.card-left -->
+{#                            <div class="card-right float-right text-right">#}
+{#                                <i class="icon fade-5 icon-lg pe-7s-cart"></i>#}
+{#                            </div><!-- /.card-right -->#}
+                        </div>
+                    </div>
+                </div>
+                <!--/.col-->
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-white bg-flat-color-6">
+                        <div class="card-body">
+                            <div class="card-left pt-1 float-left">
+                                <h3 class="mb-0 fw-r">
+                                    <span class="count float-left">18</span>
+                                    <span>%</span>
+                                </h3>
+                                <p class="text-light mt-1 m-0">IMG</p>
+                            </div><!-- /.card-left -->
+{#                            <div class="card-right float-right text-right">#}
+{#                                <div id="flotBar1" class="flotBar1"></div>#}
+{#                            </div><!-- /.card-right -->#}
+                        </div>
+                    </div>
+                </div>
+                <!--/.col-->
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-white bg-flat-color-3">
+                        <div class="card-body">
+                            <div class="card-left pt-1 float-left">
+                                <h3 class="mb-0 fw-r">
+                                    <span class="count">1910</span>
+                                    <span>kcal</span>
+                                </h3>
+                                <p class="text-light mt-1 m-0">calories par jour</p>
+                            </div><!-- /.card-left -->
+{#                            <div class="card-right float-right text-right">#}
+{#                                <i class="icon fade-5 icon-lg pe-7s-users"></i>#}
+{#                            </div><!-- /.card-right -->#}
+                        </div>
+                    </div>
+                </div>
+                <!--/.col-->
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-white bg-flat-color-2">
+                        <div class="card-body">
+                            <div class="card-left pt-1 float-left">
+                                <h3 class="mb-0 fw-r">
+                                    <span class="count">75</span>
+                                    <span>kg</span>
+                                </h3>
+                                <p class="text-light mt-1 m-0">Poids idéal</p>
+                            </div><!-- /.card-left -->
+{#                            <div class="card-right float-right text-right">#}
+{#                                <div id="flotLine1" class="flotLine1"></div>#}
+{#                            </div><!-- /.card-right -->#}
+                        </div>
+                    </div>
+                </div>
+                <!--/.col-->
+
+
+            </div><!-- .row -->
+        </div>
+        <!-- .animated -->
+    </div>
+    <!-- /.content -->
+
+
+
 
 {% endblock %}

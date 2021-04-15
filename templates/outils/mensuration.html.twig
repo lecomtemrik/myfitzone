@@ -1,41 +1,100 @@
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
 {% extends 'base.html.twig' %}
 
 {% block title %}Mensuration{% endblock %}
 
 {% block body %}
-    <h1>Mensuration</h1>
+    <!-- Breadcrumbs-->
+    <div class="breadcrumbs">
+        <div class="breadcrumbs-inner">
+            <div class="row m-0">
+                <div class="col-sm-4">
+                    <div class="page-header float-left">
+                        <div class="page-title">
+                            <h1>Mensuration</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="page-header float-right">
+                        <div class="page-title">
+                            <ol class="breadcrumb text-right">
+                                <li><a href="#">Outils</a></li>
+                                <li><a href="#">Suivi</a></li>
+                                <li class="active">Mensuration</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.breadcrumbs-->
 
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Enregistrer') }}</button>
-    {{ form_end(form) }}
+
+<!-- Content -->
+<div class="content">
+    <!-- Animated -->
+    <div class="animated fadeIn">
+
+        <div class="card">
+            <div class="card-header">
+                Mes mesures :
+            </div>
+            <div class="card-body">
+                {{ form_start(form) }}
+                <div class="container">
+                    <div class="row row-cols-4">
+                        <div class="col">{{ form_label(form.Cou) }}{{ form_widget(form.Cou) }}</div>
+                        <div class="col">{{ form_label(form.Epaules) }}{{ form_widget(form.Epaules) }}</div>
+                        <div class="col">{{ form_label(form.Poitrine) }}{{ form_widget(form.Poitrine) }}</div>
+                        <div class="col">{{ form_label(form.Bras) }}{{ form_widget(form.Bras) }}</div>
+                        <div class="col">{{ form_label(form.Tourdetaille) }}{{ form_widget(form.Tourdetaille) }}</div>
+                        <div class="col">{{ form_label(form.Cuisses) }}{{ form_widget(form.Cuisses) }}</div>
+                        <div class="col">{{ form_label(form.Mollets) }}{{ form_widget(form.Mollets) }}</div>
+                        <button class="btn">{{ button_label|default('Enregistrer') }}</button>
+                    </div>
+                </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+{#    {{ form_start(form) }}#}
+{#    {{ form_widget(form) }}#}
+{#    <button class="btn">{{ button_label|default('Enregistrer') }}</button>#}
+{#    {{ form_end(form) }}#}
 
     {# @Todo: gérer mensuration null#}
 
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">Cou</th>
-            <th scope="col">Epaules</th>
-            <th scope="col">Poitrine</th>
-            <th scope="col">Bras</th>
-            <th scope="col">Tour de taille</th>
-            <th scope="col">cuisses</th>
-            <th scope="col">Mollets</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th>{{ lastMensuration.Cou }}</th>
-            <th>{{ lastMensuration.Epaules }}</th>
-            <th>{{ lastMensuration.Poitrine }}</th>
-            <th>{{ lastMensuration.Bras }}</th>
-            <th>{{ lastMensuration.Tourdetaille }}</th>
-            <th>{{ lastMensuration.Cuisses }}</th>
-            <th>{{ lastMensuration.Mollets }}</th>
-        </tr>
-        </tbody>
-    </table>
+{#    <table class="table">#}
+{#        <thead>#}
+{#        <tr>#}
+{#            <th scope="col">Cou</th>#}
+{#            <th scope="col">Epaules</th>#}
+{#            <th scope="col">Poitrine</th>#}
+{#            <th scope="col">Bras</th>#}
+{#            <th scope="col">Tour de taille</th>#}
+{#            <th scope="col">cuisses</th>#}
+{#            <th scope="col">Mollets</th>#}
+{#        </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+{#        <tr>#}
+{#            <th>{{ lastMensuration.Cou }}</th>#}
+{#            <th>{{ lastMensuration.Epaules }}</th>#}
+{#            <th>{{ lastMensuration.Poitrine }}</th>#}
+{#            <th>{{ lastMensuration.Bras }}</th>#}
+{#            <th>{{ lastMensuration.Tourdetaille }}</th>#}
+{#            <th>{{ lastMensuration.Cuisses }}</th>#}
+{#            <th>{{ lastMensuration.Mollets }}</th>#}
+{#        </tr>#}
+{#        </tbody>#}
+{#    </table>#}
 
     <div style="width: 50%; height: 50%">
         <canvas id="myChart" width="200" height="50"></canvas>
@@ -49,7 +108,7 @@
         var myChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ['janvier', 'fevrier','mars'],
+                labels: ['janvier', 'fevrier','mars','avril','mai'],
                 datasets: [{
                     label: 'Bras',
                     data: ar,
