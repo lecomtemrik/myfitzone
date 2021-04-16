@@ -26,10 +26,12 @@ class MensurationController extends AbstractController
         $utilisateur = $this->getUser();
         $mensurationUtilisateur = $mensurationRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
         $lastMensuration = end($mensurationUtilisateur);
+
         foreach ($mensurationUtilisateur as $item){
             $mensurationArray[] = $item->getBras();
         }
-        dump($mensurationArray);
+
+        $brasArr =  array_values($mensurationArray);
 
         $form = $this->createForm(MensurationType::class, $mensuration);
         $form->handleRequest($request);
@@ -39,13 +41,14 @@ class MensurationController extends AbstractController
             $mensuration->setUtilisateur($utilisateur);
             $entityManager->persist($mensuration);
             $entityManager->flush();
+            dump($brasArr);
 
             return $this->redirectToRoute('mensuration_index');
         }
 
         return $this->render('outils/mensuration.html.twig', [
             'mensurations' => $mensurationArray,
-            'mensurationArr' => [35,40,45,50,60],
+            'mensurationArr' => $brasArr,
             'lastMensuration' => $lastMensuration,
             'form' => $form->createView(),
         ]);

@@ -11,14 +11,57 @@ class MensurationType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        $var = 37;
         $builder
-            ->add('Cou')
-            ->add('Epaules')
-            ->add('Poitrine')
-            ->add('Bras')
-            ->add('Tourdetaille')
-            ->add('Cuisses')
-            ->add('Mollets')
+            ->add('Cou', null,
+                [
+                    'required'   => false,
+                    'empty_data' => '37',
+                    'attr' => [
+                        'placeholder' => $var
+                    ]])
+            ->add('Epaules', null,
+                [
+                    'required'   => false,
+                    'empty_data' => '37',
+                    'attr' => [
+                        'placeholder' => $var
+                    ]])
+            ->add('Poitrine', null,
+                [
+                    'required'   => false,
+                    'empty_data' => '37',
+                    'attr' => [
+                        'placeholder' => $var
+                    ]])
+            ->add('Bras', null,
+                [
+                    'required'   => false,
+                    'empty_data' => '37',
+                    'attr' => [
+                    'placeholder' => $var
+                ]])
+            ->add('Tourdetaille', null,
+                [
+                    'required'   => false,
+                    'empty_data' => '37',
+                    'attr' => [
+                        'placeholder' => $var
+                    ]])
+            ->add('Cuisses', null,
+                [
+                    'required'   => false,
+                    'empty_data' => '37',
+                    'attr' => [
+                        'placeholder' => $var
+                    ]])
+            ->add('Mollets', null,
+                [
+                    'required'   => false,
+                    'empty_data' => '37',
+                    'attr' => [
+                        'placeholder' => $var
+                    ]])
         ;
     }
 

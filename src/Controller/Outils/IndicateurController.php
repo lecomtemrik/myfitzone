@@ -22,13 +22,28 @@ class IndicateurController extends AbstractController
     public function new(Request $request, MesureRepository $mesureRepository): Response
     {
         $mesure = new Mesure();
-        $utilisateur = $this->getUser();
-        $mesureUtilisateur = $mesureRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
-        $lastMesure = end($mesureUtilisateur);
         $form = $this->createForm(MesureType::class, $mesure);
         $form->handleRequest($request);
 
+        $utilisateur = $this->getUser();
+        $mesureUtilisateur = $mesureRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
+
+        if (empty($mesureUtilisateur)){
+            $imcResult = null;
+            $imgResult = null;
+        }else{
+            $lastMesure = end($mesureUtilisateur);
+
+            $imcResult = round($lastMesure->getPoids()/pow($lastMesure->getTaille()/100, 2),1);
+            if ($lastMesure->getSexe()==true){
+                $imgResult = round((1.2*$imcResult)+(0.23*$lastMesure->getAge())-(10.8*1)-5.4,1);
+            }else {
+                $imgResult = round((1.2*$imcResult)+(0.23*$lastMesure->getAge())-(10.8*0)-5.4,1);
+            }
+        }
+
         if ($form->isSubmitted() && $form->isValid()) {
+
             $entityManager = $this->getDoctrine()->getManager();
             $mesure->setUtilisateur($utilisateur);
             $entityManager->persist($mesure);
@@ -38,8 +53,10 @@ class IndicateurController extends AbstractController
         }
 
         return $this->render('outils/indicateur.html.twig', [
+            'imc' => $imcResult,
+            'img' => $imgResult,
             'mesures' => $mesureUtilisateur,
-            'lastMesure' => $lastMesure,
+//            'lastMesure' => $lastMesure,
             'form' => $form->createView(),
         ]);
     }

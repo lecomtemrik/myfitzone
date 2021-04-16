@@ -5,7 +5,7 @@
 
 {% block body %}
     <!-- Breadcrumbs-->
-    <div class="breadcrumbs">
+    <div class="breadcrumbs shadow-sm p-3 mb-5 bg-white rounded">
         <div class="breadcrumbs-inner">
             <div class="row m-0">
                 <div class="col-sm-4">
@@ -37,27 +37,119 @@
     <!-- Animated -->
     <div class="animated fadeIn">
 
-        <div class="card">
-            <div class="card-header">
-                Mes mesures :
-            </div>
-            <div class="card-body">
-                {{ form_start(form) }}
-                <div class="container">
-                    <div class="row row-cols-4">
-                        <div class="col">{{ form_label(form.Cou) }}{{ form_widget(form.Cou) }}</div>
-                        <div class="col">{{ form_label(form.Epaules) }}{{ form_widget(form.Epaules) }}</div>
-                        <div class="col">{{ form_label(form.Poitrine) }}{{ form_widget(form.Poitrine) }}</div>
-                        <div class="col">{{ form_label(form.Bras) }}{{ form_widget(form.Bras) }}</div>
-                        <div class="col">{{ form_label(form.Tourdetaille) }}{{ form_widget(form.Tourdetaille) }}</div>
-                        <div class="col">{{ form_label(form.Cuisses) }}{{ form_widget(form.Cuisses) }}</div>
-                        <div class="col">{{ form_label(form.Mollets) }}{{ form_widget(form.Mollets) }}</div>
-                        <button class="btn">{{ button_label|default('Enregistrer') }}</button>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header shadow p-3 rounded" style="background-color: #03A9F3; color: white; text-align: center">
+                        Actuel
+                    </div>
+                    <div class="card-body">
+                        {{ form_start(form) }}
+                        <div class="container">
+                            <div class="row row-cols-4">
+                                <div class="col">{{ form_label(form.Cou) }}{{ form_widget(form.Cou) }}</div>
+                                <div class="col">{{ form_label(form.Epaules) }}{{ form_widget(form.Epaules) }}</div>
+                                <div class="col">{{ form_label(form.Poitrine) }}{{ form_widget(form.Poitrine) }}</div>
+                                <div class="col">{{ form_label(form.Bras) }}{{ form_widget(form.Bras) }}</div>
+                                <div class="col">{{ form_label(form.Tourdetaille) }}{{ form_widget(form.Tourdetaille) }}</div>
+                                <div class="col">{{ form_label(form.Cuisses) }}{{ form_widget(form.Cuisses) }}</div>
+                                <div class="col">{{ form_label(form.Mollets) }}{{ form_widget(form.Mollets) }}</div>
+                                <button class="btn">{{ button_label|default('Enregistrer') }}</button>
+                            </div>
+                        </div>
+                        {{ form_end(form) }}
                     </div>
                 </div>
-                {{ form_end(form) }}
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header shadow p-3 rounded" style="background-color: #00c292; color: white; text-align: center">
+                        Objectif
+                    </div>
+                    <div class="card-body">
+                        {{ form_start(form) }}
+                        <div class="container">
+                            <div class="row row-cols-4">
+                                <div class="col">{{ form_label(form.Cou) }}{{ form_widget(form.Cou) }}</div>
+                                <div class="col">{{ form_label(form.Epaules) }}{{ form_widget(form.Epaules) }}</div>
+                                <div class="col">{{ form_label(form.Poitrine) }}{{ form_widget(form.Poitrine) }}</div>
+                                <div class="col">{{ form_label(form.Bras) }}{{ form_widget(form.Bras) }}</div>
+                                <div class="col">{{ form_label(form.Tourdetaille) }}{{ form_widget(form.Tourdetaille) }}</div>
+                                <div class="col">{{ form_label(form.Cuisses) }}{{ form_widget(form.Cuisses) }}</div>
+                                <div class="col">{{ form_label(form.Mollets) }}{{ form_widget(form.Mollets) }}</div>
+                                <button class="btn">{{ button_label|default('Enregistrer') }}</button>
+                            </div>
+                        </div>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <!--  Traffic  -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="box-title">Haut du corps</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <!-- <canvas id="TrafficChart"></canvas>   -->
+                                <canvas id="hautDuCorps"></canvas>
+{#                                <div id="hautDuCorps" class="traffic-chart"></div>#}
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card-body">
+                                <div class="progress-box progress-1">
+                                    <h4 class="por-title">Visits</h4>
+                                    <div class="por-txt">96,930 Users (40%)</div>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-box progress-2">
+                                    <h4 class="por-title">Bounce Rate</h4>
+                                    <div class="por-txt">3,220 Users (24%)</div>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-box progress-2">
+                                    <h4 class="por-title">Unique Visitors</h4>
+                                    <div class="por-txt">29,658 Users (60%)</div>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-box progress-2">
+                                    <h4 class="por-title">Targeted  Visitors</h4>
+                                    <div class="por-txt">99,658 Users (90%)</div>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div> <!-- /.card-body -->
+                        </div>
+                    </div> <!-- /.row -->
+                    <div class="card-body"></div>
+
+{#                    <div style="width: 50%; height: 50%">#}
+{#                        <canvas id="hautDuCorps" width="200" height="50"></canvas>#}
+{#                    </div>#}
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
     </div>
 </div>
@@ -96,22 +188,25 @@
 {#        </tbody>#}
 {#    </table>#}
 
+
+
     <div style="width: 50%; height: 50%">
-        <canvas id="myChart" width="200" height="50"></canvas>
+        <canvas id="basDuCorps" width="200" height="50"></canvas>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
-        var ctx = document.getElementById('myChart');
-        var ar = {{ mensurationArr|json_encode }}
-        var myChart = new Chart(ctx, {
+        var ctx = document.getElementById('hautDuCorps');
+        var brasArr = {{ mensurationArr|json_encode }}
+        var hautChart = new Chart(ctx, {
             type: 'line',
             data: {
                 labels: ['janvier', 'fevrier','mars','avril','mai'],
                 datasets: [{
-                    label: 'Bras',
-                    data: ar,
+                    label: 'Cou',
+                    // data: brasArr,
+                    data: [10,15,20,25],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)'
@@ -121,7 +216,21 @@
                         'rgba(54, 162, 235, 1)'
                     ],
                     borderWidth: 1
-                }]
+                },
+                    {
+                        label: 'Bras',
+                        data: brasArr,
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)'
+                        ],
+                        borderWidth: 1
+                    }
+                ]
             },
             options: {
                 scales: {

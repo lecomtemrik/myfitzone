@@ -61,7 +61,11 @@
                         <div class="card-body">
                             <div class="card-left pt-1 float-left">
                                 <h3 class="mb-0 fw-r">
-                                    <span class="count">23</span><br>
+                                    {% if imc == null %}
+                                        <span>?</span><br>
+                                    {% else %}
+                                        <span class="count">{{ imc }}</span><br>
+                                    {% endif %}
                                 </h3>
                                 <p class="text-light mt-1 m-0">IMC</p>
                             </div><!-- /.card-left -->
@@ -78,8 +82,13 @@
                         <div class="card-body">
                             <div class="card-left pt-1 float-left">
                                 <h3 class="mb-0 fw-r">
-                                    <span class="count float-left">18</span>
-                                    <span>%</span>
+                                    {% if img == null %}
+                                        <span>?</span>
+                                        <span>%</span>
+                                    {% else %}
+                                        <span class="count">{{ img }}</span>
+                                        <span>%</span>
+                                    {% endif %}
                                 </h3>
                                 <p class="text-light mt-1 m-0">IMG</p>
                             </div><!-- /.card-left -->
