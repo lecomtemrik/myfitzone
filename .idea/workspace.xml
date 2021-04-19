@@ -22,11 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="interface indicateur/mensuration en cours #11">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="Interface indicateur =&gt; calcule imc/img avec formulaire - Interface mensuration =&gt; passage array au chartjs = en cours #11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/MensurationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MensurationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Mesure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Mesure.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/MesureType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MesureType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" afterDir="false" />
     </list>
@@ -314,7 +314,12 @@
       <workItem from="1618428597647" duration="1254000" />
       <workItem from="1618440422442" duration="6772000" />
       <workItem from="1618500085421" duration="4806000" />
-      <workItem from="1618520225497" duration="7895000" />
+      <workItem from="1618520225497" duration="8308000" />
+      <workItem from="1618586918001" duration="1263000" />
+      <workItem from="1618650881334" duration="653000" />
+      <workItem from="1618686735392" duration="4494000" />
+      <workItem from="1618743077347" duration="4281000" />
+      <workItem from="1618787170836" duration="3175000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -554,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618447232969</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Interface indicateur =&gt; calcule imc/img avec formulaire - Interface mensuration =&gt; passage array au chartjs = en cours #11">
+      <created>1618531883631</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1618531883631</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +585,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="crud categorie / nucleos_profile / menu / article template / interface icon" />
     <MESSAGE value="(wysiwyg) #5 ajout d'un wysiwyg sur le textarea de la création d'article&#10;Installation / configuration / personnalisation" />
     <MESSAGE value="(updateDB) #7 Ajout Adresse / Profil" />
     <MESSAGE value="(tag-8) #8 ajout beelabtagbundle pour la gestion des tags des articles" />
@@ -598,7 +609,8 @@
     <MESSAGE value="Mensuration/Mesure/Utilisateur =&gt; ManyToOne/OneToMany #11" />
     <MESSAGE value="mensuration/mesure =&gt; suivi en cours #11" />
     <MESSAGE value="interface indicateur/mensuration en cours #11" />
-    <option name="LAST_COMMIT_MESSAGE" value="interface indicateur/mensuration en cours #11" />
+    <MESSAGE value="Interface indicateur =&gt; calcule imc/img avec formulaire - Interface mensuration =&gt; passage array au chartjs = en cours #11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface indicateur =&gt; calcule imc/img avec formulaire - Interface mensuration =&gt; passage array au chartjs = en cours #11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -629,17 +641,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1618447241748">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1618531886931">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1618447241748" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1618531886931" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1618259757079">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1618259757079" />
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1617406584239">
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1618789323210">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1617406584239" />
+    <state x="1093" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1618789323210" />
   </component>
 </project>

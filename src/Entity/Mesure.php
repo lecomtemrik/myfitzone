@@ -42,6 +42,11 @@ class Mesure
      */
     private $utilisateur;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $niveauActivite;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -103,6 +108,18 @@ class Mesure
     public function setUtilisateur(?Utilisateur $utilisateur): self
     {
         $this->utilisateur = $utilisateur;
+
+        return $this;
+    }
+
+    public function getNiveauActivite(): ?string
+    {
+        return $this->niveauActivite;
+    }
+
+    public function setNiveauActivite(string $niveauActivite): self
+    {
+        $this->niveauActivite = $niveauActivite;
 
         return $this;
     }

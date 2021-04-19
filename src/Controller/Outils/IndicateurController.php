@@ -31,14 +31,26 @@ class IndicateurController extends AbstractController
         if (empty($mesureUtilisateur)){
             $imcResult = null;
             $imgResult = null;
+            $metaBase = null;
+            $poidsIdeal = null;
+            $quantiteEau = null;
         }else{
             $lastMesure = end($mesureUtilisateur);
-
             $imcResult = round($lastMesure->getPoids()/pow($lastMesure->getTaille()/100, 2),1);
+            if ($lastMesure->getAge() < 60){
+                $quantiteEau = round($lastMesure->getPoids()*30);
+            }else {
+                $quantiteEau = round($lastMesure->getPoids()*25);
+            }
+
             if ($lastMesure->getSexe()==true){
                 $imgResult = round((1.2*$imcResult)+(0.23*$lastMesure->getAge())-(10.8*1)-5.4,1);
+                $metaBase = round(66.5+(13.75*$lastMesure->getPoids())+(5*$lastMesure->getTaille())-(6.77*$lastMesure->getAge()));
+                $poidsIdeal = round($lastMesure->getTaille()-100-(($lastMesure->getTaille()-150)/4));
             }else {
                 $imgResult = round((1.2*$imcResult)+(0.23*$lastMesure->getAge())-(10.8*0)-5.4,1);
+                $metaBase = round(655+(9.56*$lastMesure->getPoids())+(1.85*$lastMesure->getTaille())-(4.67*$lastMesure->getAge()));
+                $poidsIdeal = round($lastMesure->getTaille()-100-(($lastMesure->getTaille()-150)/2.5));
             }
         }
 
@@ -55,8 +67,10 @@ class IndicateurController extends AbstractController
         return $this->render('outils/indicateur.html.twig', [
             'imc' => $imcResult,
             'img' => $imgResult,
+            'metabolismeBase' => $metaBase,
+            'poidsIdeal' => $poidsIdeal,
+            'quantiteEau' => $quantiteEau,
             'mesures' => $mesureUtilisateur,
-//            'lastMesure' => $lastMesure,
             'form' => $form->createView(),
         ]);
     }
