@@ -1,4 +1,5 @@
-{% form_theme form 'bootstrap_4_layout.html.twig' %}
+{% form_theme formActuel 'bootstrap_4_layout.html.twig' %}
+{% form_theme formObjectif 'bootstrap_4_layout.html.twig' %}
 {% extends 'base.html.twig' %}
 
 {% block title %}Mensuration{% endblock %}
@@ -44,20 +45,20 @@
                         Actuel
                     </div>
                     <div class="card-body">
-                        {{ form_start(form) }}
+                        {{ form_start(formActuel) }}
                         <div class="container">
                             <div class="row row-cols-4">
-                                <div class="col">{{ form_label(form.Cou) }}{{ form_widget(form.Cou) }}</div>
-                                <div class="col">{{ form_label(form.Epaules) }}{{ form_widget(form.Epaules) }}</div>
-                                <div class="col">{{ form_label(form.Poitrine) }}{{ form_widget(form.Poitrine) }}</div>
-                                <div class="col">{{ form_label(form.Bras) }}{{ form_widget(form.Bras) }}</div>
-                                <div class="col">{{ form_label(form.Tourdetaille) }}{{ form_widget(form.Tourdetaille) }}</div>
-                                <div class="col">{{ form_label(form.Cuisses) }}{{ form_widget(form.Cuisses) }}</div>
-                                <div class="col">{{ form_label(form.Mollets) }}{{ form_widget(form.Mollets) }}</div>
+                                <div class="col">{{ form_label(formActuel.Cou) }}{{ form_widget(formActuel.Cou) }}</div>
+                                <div class="col">{{ form_label(formActuel.Epaules) }}{{ form_widget(formActuel.Epaules) }}</div>
+                                <div class="col">{{ form_label(formActuel.Poitrine) }}{{ form_widget(formActuel.Poitrine) }}</div>
+                                <div class="col">{{ form_label(formActuel.Bras) }}{{ form_widget(formActuel.Bras) }}</div>
+                                <div class="col">{{ form_label(formActuel.Tourdetaille) }}{{ form_widget(formActuel.Tourdetaille) }}</div>
+                                <div class="col">{{ form_label(formActuel.Cuisses) }}{{ form_widget(formActuel.Cuisses) }}</div>
+                                <div class="col">{{ form_label(formActuel.Mollets) }}{{ form_widget(formActuel.Mollets) }}</div>
                                 <button class="btn">{{ button_label|default('Enregistrer') }}</button>
                             </div>
                         </div>
-                        {{ form_end(form) }}
+                        {{ form_end(formActuel) }}
                     </div>
                 </div>
             </div>
@@ -67,20 +68,20 @@
                         Objectif
                     </div>
                     <div class="card-body">
-                        {{ form_start(form) }}
+                        {{ form_start(formObjectif) }}
                         <div class="container">
                             <div class="row row-cols-4">
-                                <div class="col">{{ form_label(form.Cou) }}{{ form_widget(form.Cou) }}</div>
-                                <div class="col">{{ form_label(form.Epaules) }}{{ form_widget(form.Epaules) }}</div>
-                                <div class="col">{{ form_label(form.Poitrine) }}{{ form_widget(form.Poitrine) }}</div>
-                                <div class="col">{{ form_label(form.Bras) }}{{ form_widget(form.Bras) }}</div>
-                                <div class="col">{{ form_label(form.Tourdetaille) }}{{ form_widget(form.Tourdetaille) }}</div>
-                                <div class="col">{{ form_label(form.Cuisses) }}{{ form_widget(form.Cuisses) }}</div>
-                                <div class="col">{{ form_label(form.Mollets) }}{{ form_widget(form.Mollets) }}</div>
+                                <div class="col">{{ form_label(formObjectif.Cou) }}{{ form_widget(formObjectif.Cou) }}</div>
+                                <div class="col">{{ form_label(formObjectif.Epaules) }}{{ form_widget(formObjectif.Epaules) }}</div>
+                                <div class="col">{{ form_label(formObjectif.Poitrine) }}{{ form_widget(formObjectif.Poitrine) }}</div>
+                                <div class="col">{{ form_label(formObjectif.Bras) }}{{ form_widget(formObjectif.Bras) }}</div>
+                                <div class="col">{{ form_label(formObjectif.Tourdetaille) }}{{ form_widget(formObjectif.Tourdetaille) }}</div>
+                                <div class="col">{{ form_label(formObjectif.Cuisses) }}{{ form_widget(formObjectif.Cuisses) }}</div>
+                                <div class="col">{{ form_label(formObjectif.Mollets) }}{{ form_widget(formObjectif.Mollets) }}</div>
                                 <button class="btn">{{ button_label|default('Enregistrer') }}</button>
                             </div>
                         </div>
-                        {{ form_end(form) }}
+                        {{ form_end(formObjectif) }}
                     </div>
                 </div>
             </div>

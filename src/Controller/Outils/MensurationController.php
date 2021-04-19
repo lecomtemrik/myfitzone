@@ -3,6 +3,8 @@
 namespace App\Controller\Outils;
 
 use App\Entity\Mensuration;
+use App\Entity\MensurationObjectif;
+use App\Form\MensurationObjectifType;
 use App\Form\MensurationType;
 use App\Repository\MensurationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -23,6 +25,7 @@ class MensurationController extends AbstractController
     public function new(Request $request, MensurationRepository $mensurationRepository): Response
     {
         $mensuration = new Mensuration();
+        $mensurationObjectif = new MensurationObjectif();
         $utilisateur = $this->getUser();
         $mensurationUtilisateur = $mensurationRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
         $lastMensuration = end($mensurationUtilisateur);
@@ -33,15 +36,25 @@ class MensurationController extends AbstractController
 
         $brasArr =  array_values($mensurationArray);
 
-        $form = $this->createForm(MensurationType::class, $mensuration);
-        $form->handleRequest($request);
+        $formActuel = $this->createForm(MensurationType::class, $mensuration);
+        $formObjectif = $this->createForm(MensurationObjectifType::class, $mensurationObjectif);
+        $formActuel->handleRequest($request);
+        $formObjectif->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+        if ($formActuel->isSubmitted() && $formActuel->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $mensuration->setUtilisateur($utilisateur);
             $entityManager->persist($mensuration);
             $entityManager->flush();
-            dump($brasArr);
+
+            return $this->redirectToRoute('mensuration_index');
+        }
+
+        if ($formObjectif->isSubmitted() && $formObjectif->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $mensurationObjectif->setUtilisateur($utilisateur);
+            $entityManager->persist($mensurationObjectif);
+            $entityManager->flush();
 
             return $this->redirectToRoute('mensuration_index');
         }
@@ -50,7 +63,8 @@ class MensurationController extends AbstractController
             'mensurations' => $mensurationArray,
             'mensurationArr' => $brasArr,
             'lastMensuration' => $lastMensuration,
-            'form' => $form->createView(),
+            'formActuel' => $formActuel->createView(),
+            'formObjectif' => $formObjectif->createView(),
         ]);
     }
 

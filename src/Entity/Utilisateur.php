@@ -44,12 +44,18 @@ class Utilisateur extends BaseUser
      */
     private $mensurations;
 
+    /**
+     * @ORM\OneToMany(targetEntity=MensurationObjectif::class, mappedBy="utilisateur", orphanRemoval=true)
+     */
+    private $mensurationObjectifs;
+
     public function __construct()
     {
         parent::__construct();
         // your own logic
         $this->mesures = new ArrayCollection();
         $this->mensurations = new ArrayCollection();
+        $this->mensurationObjectifs = new ArrayCollection();
     }
 
     public function getProfil(): ?Profil
@@ -130,6 +136,36 @@ class Utilisateur extends BaseUser
             // set the owning side to null (unless already changed)
             if ($mensuration->getUtilisateur() === $this) {
                 $mensuration->setUtilisateur(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|MensurationObjectif[]
+     */
+    public function getMensurationObjectifs(): Collection
+    {
+        return $this->mensurationObjectifs;
+    }
+
+    public function addMensurationObjectif(MensurationObjectif $mensurationObjectif): self
+    {
+        if (!$this->mensurationObjectifs->contains($mensurationObjectif)) {
+            $this->mensurationObjectifs[] = $mensurationObjectif;
+            $mensurationObjectif->setUtilisateur($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMensurationObjectif(MensurationObjectif $mensurationObjectif): self
+    {
+        if ($this->mensurationObjectifs->removeElement($mensurationObjectif)) {
+            // set the owning side to null (unless already changed)
+            if ($mensurationObjectif->getUtilisateur() === $this) {
+                $mensurationObjectif->setUtilisateur(null);
             }
         }
 
