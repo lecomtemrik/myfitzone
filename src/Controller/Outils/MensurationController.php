@@ -37,6 +37,10 @@ class MensurationController extends AbstractController
         $poitrineArrayValues = null;
         $brasArrayValues = null;
 
+        $tourDeTailleArrayValues = null;
+        $cuissesArrayValues = null;
+        $molletsArrayValues = null;
+
         $mensurationUtilisateur = $mensurationRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
         $mensurationObjectifUtilisateur = $mensurationObjectifRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
 
@@ -60,11 +64,19 @@ class MensurationController extends AbstractController
                 $epaulesArray[] = $item->getEpaules();
                 $poitrineArray[] = $item->getPoitrine();
                 $brasArray[] = $item->getBras();
+
+                $tourDeTailleArray[] = $item->getTourdetaille();
+                $cuissesArray[] = $item->getCuisses();
+                $molletsArray[] = $item->getMollets();
             }
             $couArrayValues =  array_values($couArray);
             $epaulesArrayValues =  array_values($epaulesArray);
             $poitrineArrayValues =  array_values($poitrineArray);
             $brasArrayValues =  array_values($brasArray);
+
+            $tourDeTailleArrayValues =  array_values($tourDeTailleArray);
+            $cuissesArrayValues =  array_values($cuissesArray);
+            $molletsArrayValues =  array_values($molletsArray);
         }
 
         $formActuel = $this->createForm(MensurationType::class, $mensuration);
@@ -103,6 +115,11 @@ class MensurationController extends AbstractController
             'epaules' => $epaulesArrayValues,
             'poitrine' => $poitrineArrayValues,
             'bras' => $brasArrayValues,
+
+            'tourDeTaille' => $tourDeTailleArrayValues,
+            'cuisses' => $cuissesArrayValues,
+            'mollets' => $molletsArrayValues,
+
             'date' => $dateArrayValues,
 
         ]);

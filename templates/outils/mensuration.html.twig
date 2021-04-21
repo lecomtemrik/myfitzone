@@ -88,7 +88,7 @@
         </div>
 
 
-        <!--  Traffic  -->
+        <!--  haut du corps  -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
@@ -148,31 +148,85 @@
         </div>
 
 
+        <!--  bas du corps  -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="box-title">Bas du corps</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card-body">
+                                <div class="progress-box progress-1">
+                                    <h4 class="por-title">Tour de taille</h4>
+                                    {% set tourDeTaillePC = lastMensuration.tourDeTaille * 100 / lastMensurationObjectif.tourDeTaille %}
+                                    <div class="por-txt">{{ lastMensuration.tourDeTaille }}cm sur {{ lastMensurationObjectif.tourDeTaille }}cm ( {{ tourDeTaillePC|round(1) }}% de l'objectif atteint )</div>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: {{ tourDeTaillePC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-box progress-2">
+                                    <h4 class="por-title">Cuisses</h4>
+                                    {% set cuissesPC = lastMensuration.cuisses * 100 / lastMensurationObjectif.cuisses %}
+                                    <div class="por-txt">{{ lastMensuration.cuisses }}cm sur {{ lastMensurationObjectif.cuisses }}cm ( {{ cuissesPC|round(1) }}% de l'objectif atteint)</div>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: {{ cuissesPC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-box progress-2">
+                                    <h4 class="por-title">Mollets</h4>
+                                    {% set molletsPC = lastMensuration.mollets * 100 / lastMensurationObjectif.mollets %}
+                                    <div class="por-txt">{{ lastMensuration.mollets }}cm sur {{ lastMensurationObjectif.mollets }}cm ( {{ molletsPC|round(1) }}% de l'objectif atteint)</div>
+                                    <div class="progress mb-2" style="height: 5px;">
+                                        <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: {{ molletsPC }}%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div> <!-- /.card-body -->
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card-body">
+                                <!-- <canvas id="TrafficChart"></canvas>   -->
+                                <canvas id="basDuCorps"></canvas>
+                                {#                                <div id="hautDuCorps" class="traffic-chart"></div>#}
+                            </div>
+                        </div>
+                    </div> <!-- /.row -->
+                    <div class="card-body"></div>
+
+                </div>
+            </div>
+        </div>
 
 
-
-
-    </div>
-</div>
+    </div><!-- Fin animated -->
+</div><!-- Fin Content -->
 
     {# @Todo: gérer mensuration null#}
 
 
-    <div style="width: 50%; height: 50%">
-        <canvas id="basDuCorps" width="200" height="50"></canvas>
-    </div>
+{#    <div style="width: 50%; height: 50%">#}
+{#        <canvas id="basDuCorps" width="200" height="50"></canvas>#}
+{#    </div>#}
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
-        var ctx = document.getElementById('hautDuCorps');
+        var ctxHDC = document.getElementById('hautDuCorps');
+        var ctxBDC = document.getElementById('basDuCorps');
+
         var date = {{ date|json_encode|raw }};
+
         var cou = {{ cou|json_encode }};
         var epaules = {{ epaules|json_encode }};
         var poitrine = {{ poitrine|json_encode }};
         var bras = {{ bras|json_encode }};
 
-        var hautChart = new Chart(ctx, {
+        var tourDeTaille = {{ tourDeTaille|json_encode }};
+        var cuisses = {{ cuisses|json_encode }};
+        var mollets = {{ mollets|json_encode }};
+
+        var hautChart = new Chart(ctxHDC, {
             type: 'line',
             data: {
                 labels: date,
@@ -228,6 +282,51 @@
                 }
             }
         });
+
+        var basChart = new Chart(ctxBDC, {
+            type: 'line',
+            data: {
+                labels: date,
+                datasets: [{
+                    label: 'Tour de taille',
+                    data: tourDeTaille,
+                    backgroundColor: [
+                        '#00c292',
+                    ],
+                    borderColor: [
+                        '#00c292',
+                    ],
+                    borderWidth: 3
+                },{
+                    label: 'Cuisses',
+                    data: cuisses,
+                    backgroundColor: [
+                        '#ab8ce4',
+                    ],
+                    borderColor: [
+                        '#ab8ce4',
+                    ],
+                    borderWidth: 3
+                },{
+                    label: 'Mollets',
+                    data: mollets,
+                    backgroundColor: [
+                        '#03a9f3',
+                    ],
+                    borderColor: [
+                        '#03a9f3',
+                    ],
+                    borderWidth: 3
+                }]},
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                }
+            }
+        });
+
     </script>
 
 {% endblock %}
