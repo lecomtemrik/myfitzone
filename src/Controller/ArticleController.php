@@ -39,7 +39,6 @@ class ArticleController extends AbstractController
             $article->updatedTimestamps();
             $article->setUtilisateur($this->getUser());
             $entityManager = $this->getDoctrine()->getManager();
-            dump($form);
             $entityManager->persist($article);
             $entityManager->flush();
 
