@@ -169,7 +169,10 @@
 
                             <div class="col-lg-6">
                                 <div class="card-body">
-{#                                    <canvas id="cprPieChart" width="200" height="200"></canvas>#}
+                                    <canvas id="macroChart" width="200" height="200"></canvas>
+                                    {% set glucide = besoinCalorique * 0.5 / 4 %}
+                                    {% set proteine = besoinCalorique * 0.15 /4 %}
+                                    {% set lipide = besoinCalorique * 0.35 / 9 %}
                                 </div>
                             </div>
                         </div> <!-- /.row -->
@@ -251,13 +254,46 @@
                 },
                 title:{
                     display:true,
-                    text: 'calorie par repas par jour',
+                    text: 'Calories journalier',
                     position: 'top',
                 },
               tooltip: {
                   // enabled: false,
                   // intersect: false,
               },
+            },
+            responsive: true,
+        }
+    });
+
+
+    new Chart(document.getElementById("macroChart"), {
+        type: 'bar',
+        data: {
+            labels: ["Glucides","Protéines","Lipides"],
+            datasets: [
+            {
+                // label: ["Glucides","Protéines","Lipides"],
+                data: [{{ glucide|round() }}, {{ proteine|round() }}, {{ lipide|round() }}],
+                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f"],
+            },
+            ]
+        },
+        options: {
+            plugins: {
+                legend:{
+                    display: false,
+                    // position: 'bottom',
+                },
+                title:{
+                    display:true,
+                    text: 'Macronutriment journalier',
+                    position: 'top',
+                },
+                tooltip: {
+                    // enabled: false,
+                    // intersect: false,
+                },
             },
             responsive: true,
         }
