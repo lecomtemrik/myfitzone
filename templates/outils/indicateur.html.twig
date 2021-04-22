@@ -4,9 +4,21 @@
 {% block title %}Indicateur{% endblock %}
 
 {% block body %}
+    <style>
+        #flotPie1  {
+            height: 150px;
+        }
+        #flotPie1 td {
+            padding:3px;
+        }
+        #flotPie1 table {
+            top: 20px!important;
+            right: -10px!important;
+        }
 
-    <!-- Breadcrumbs-->
-    <div class="breadcrumbs ">
+    </style>
+
+    <div class="breadcrumbs "><!-- Breadcrumbs-->
         <div class="breadcrumbs-inner shadow-sm p-3 bg-white rounded">
             <div class="row m-0">
                 <div class="col-sm-4">
@@ -29,12 +41,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /.breadcrumbs-->
-    <!-- Content -->
-    <div class="content">
-        <!-- Animated -->
-        <div class="animated fadeIn">
+    </div><!-- /.breadcrumbs-->
+
+    <div class="content"><!-- Content -->
+
+        <div class="animated fadeIn"> <!-- Animated -->
 
             <div class="card">
                 {# cool nuance de noir #1C2833 #}
@@ -57,87 +68,7 @@
                 </div>
             </div>
 
-            <div class="row">
-{#                <div class="col-sm-6 col-lg-3">#}
-{#                    <div class="card text-white bg-flat-color-1">#}
-{#                        <div class="card-body">#}
-{#                            <div class="card-left pt-1 float-left">#}
-{#                                <h3 class="mb-0 fw-r">#}
-{#                                    {% if imc == null %}#}
-{#                                        <span>?</span><br>#}
-{#                                    {% else %}#}
-{#                                        <span class="count">{{ imc }}</span><br>#}
-{#                                    {% endif %}#}
-{#                                </h3>#}
-{#                                <p class="text-light mt-1 m-0">IMC</p>#}
-{#                            </div><!-- /.card-left -->#}
-{#                            <div class="card-right float-right text-right">#}
-{#                                <i class="icon fade-5 icon-lg pe-7s-cart"></i>#}
-{#                            </div><!-- /.card-right -->#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <!--/.col-->#}
-
-{#                <div class="col-sm-6 col-lg-3">#}
-{#                    <div class="card text-white bg-flat-color-6">#}
-{#                        <div class="card-body">#}
-{#                            <div class="card-left pt-1 float-left">#}
-{#                                <h3 class="mb-0 fw-r">#}
-{#                                    {% if img == null %}#}
-{#                                        <span>?</span>#}
-{#                                        <span>%</span>#}
-{#                                    {% else %}#}
-{#                                        <span class="count">{{ img }}</span>#}
-{#                                        <span>%</span>#}
-{#                                    {% endif %}#}
-{#                                </h3>#}
-{#                                <p class="text-light mt-1 m-0">IMG</p>#}
-{#                            </div><!-- /.card-left -->#}
-{#                            <div class="card-right float-right text-right">#}
-{#                                <div id="flotBar1" class="flotBar1"></div>#}
-{#                            </div><!-- /.card-right -->#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <!--/.col-->#}
-
-{#                <div class="col-sm-6 col-lg-3">#}
-{#                    <div class="card text-white bg-flat-color-3">#}
-{#                        <div class="card-body">#}
-{#                            <div class="card-left pt-1 float-left">#}
-{#                                <h3 class="mb-0 fw-r">#}
-{#                                    <span class="count">{{ metabolismeBase }}</span>#}
-{#                                    <span>kcal</span>#}
-{#                                </h3>#}
-{#                                <p class="text-light mt-1 m-0">calories par jour</p>#}
-{#                            </div><!-- /.card-left -->#}
-{#                            <div class="card-right float-right text-right">#}
-{#                                <i class="icon fade-5 icon-lg pe-7s-users"></i>#}
-{#                            </div><!-- /.card-right -->#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <!--/.col-->#}
-
-{#                <div class="col-sm-6 col-lg-3">#}
-{#                    <div class="card text-white bg-flat-color-2">#}
-{#                        <div class="card-body">#}
-{#                            <div class="card-left pt-1 float-left">#}
-{#                                <h3 class="mb-0 fw-r">#}
-{#                                    <span class="count">{{ poidsIdeal }}</span>#}
-{#                                    <span>kg</span>#}
-{#                                </h3>#}
-{#                                <p class="text-light mt-1 m-0">Poids idéal</p>#}
-{#                            </div><!-- /.card-left -->#}
-{#                            <div class="card-right float-right text-right">#}
-{#                                <div id="flotLine1" class="flotLine1"></div>#}
-{#                            </div><!-- /.card-right -->#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <!--/.col-->#}
-
+            <div class="row"><!-- widget bilan -->
 
                 <div class="col-sm-12 mb-4">
                     <div class="card-group">
@@ -155,21 +86,6 @@
                                 <div class="progress progress-xs mt-3 mb-0 bg-flat-color-1" style="width: 40%; height: 5px;"></div>
                             </div>
                         </div>
-
-{#                        <div class="card col-md-6 no-padding ">#}
-{#                            <div class="card-body">#}
-{#                                <div class="h1 text-muted text-right mb-4">#}
-{#                                    <i class="fa fa-users"></i>#}
-{#                                </div>#}
-
-{#                                <div class="h4 mb-0">#}
-{#                                    <span class="count">{{ metabolismeBase }}</span>#}
-{#                                </div>#}
-
-{#                                <small class="text-muted text-uppercase font-weight-bold">métabolisme de base</small>#}
-{#                                <div class="progress progress-xs mt-3 mb-0 bg-flat-color-1" style="width: 40%; height: 5px;"></div>#}
-{#                            </div>#}
-{#                        </div>#}
 
                         <div class="card col-md-6 no-padding ">
                             <div class="card-body">
@@ -232,15 +148,121 @@
                         </div>
                     </div>
                 </div>
+            </div><!-- .row widget bilan -->
+
+            <div class="row"><!--  Widget calories  -->
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="box-title">Calories : Metabolisme de base = {{ metabolismeBase }} / Besoin calorique journalier = {{ besoinCalorique|round() }}</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card-body">
+                                    <canvas id="cprPieChart" width="200" height="200"></canvas>
+                                    {% set pdej = besoinCalorique * 0.25 %}
+                                    {% set dej = besoinCalorique * 0.40 %}
+                                    {% set gouter = besoinCalorique * 0.05 %}
+                                    {% set diner = besoinCalorique * 0.30 %}
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card-body">
+{#                                    <canvas id="cprPieChart" width="200" height="200"></canvas>#}
+                                </div>
+                            </div>
+                        </div> <!-- /.row -->
+                        <div class="card-body"></div>
+
+                    </div>
+                </div>
+            </div><!-- Fin row calorie -->
+
+            <div class="row"><!-- Widget IMC IMG -->
+
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mb-3">Indice de Masse Corporelle</h4>
+                        </div>
+                    </div>
+                </div><!-- /# column -->
+
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mb-3">Indice de Masse Grasse</h4>
+                        </div>
+                    </div>
+                </div><!-- /# column -->
+
+            </div><!-- Fin partie IMC IMG -->
+
+            <div class="row"><!--  Widget hydratation  -->
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="box-title">Hydratation</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card-body">
 
 
-            </div><!-- .row -->
-        </div>
-        <!-- .animated -->
-    </div>
-    <!-- /.content -->
+                                </div> <!-- /.card-body -->
+                            </div>
 
+                            <div class="col-lg-6">
+                                <div class="card-body">
 
+                                </div>
+                            </div>
+                        </div> <!-- /.row -->
+                        <div class="card-body"></div>
+
+                    </div>
+                </div>
+            </div><!-- Fin row hydratation -->
+
+        </div><!-- .animated -->
+    </div><!-- /.content -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    new Chart(document.getElementById("cprPieChart"), {
+        type: 'doughnut',
+        data: {
+            labels: ["Petit déjeuner", "Déjeuner", "Gouter", "Dîner"],
+            datasets: [{
+                label: "Calories par repas",
+                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+                data: [{{ pdej|round() }},{{ dej|round() }},{{ gouter|round() }},{{ diner|round() }}],
+                borderWidth: 5,
+                // cutout: 100,
+                hoverOffset: 5,
+            }]
+        },
+        options: {
+            plugins: {
+                legend:{
+                  position: 'bottom',
+                },
+                title:{
+                    display:true,
+                    text: 'calorie par repas par jour',
+                    position: 'top',
+                },
+              tooltip: {
+                  // enabled: false,
+                  // intersect: false,
+              },
+            },
+            responsive: true,
+        }
+    });
+</script>
 
 
 {% endblock %}

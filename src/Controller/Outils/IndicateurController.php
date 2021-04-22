@@ -34,6 +34,7 @@ class IndicateurController extends AbstractController
             $metaBase = null;
             $poidsIdeal = null;
             $quantiteEau = null;
+            $besoinCalorique = null;
         }else{
             $lastMesure = end($mesureUtilisateur);
             $imcResult = round($lastMesure->getPoids()/pow($lastMesure->getTaille()/100, 2),1);
@@ -52,6 +53,14 @@ class IndicateurController extends AbstractController
                 $metaBase = round(655+(9.56*$lastMesure->getPoids())+(1.85*$lastMesure->getTaille())-(4.67*$lastMesure->getAge()));
                 $poidsIdeal = round($lastMesure->getTaille()-100-(($lastMesure->getTaille()-150)/2.5));
             }
+
+            if ($lastMesure->getNiveauActivite() == 'sedentaire'){
+                $besoinCalorique = round($metaBase*1.37,1);
+            }elseif ($lastMesure->getNiveauActivite() == 'actif'){
+                $besoinCalorique = round($metaBase*1.55,1);
+            }elseif ($lastMesure->getNiveauActivite() == 'sportif'){
+                $besoinCalorique = round($metaBase*1.80,1);
+            }
         }
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -68,6 +77,7 @@ class IndicateurController extends AbstractController
             'imc' => $imcResult,
             'img' => $imgResult,
             'metabolismeBase' => $metaBase,
+            'besoinCalorique' => $besoinCalorique,
             'poidsIdeal' => $poidsIdeal,
             'quantiteEau' => $quantiteEau,
             'mesures' => $mesureUtilisateur,

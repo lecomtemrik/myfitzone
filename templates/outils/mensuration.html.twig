@@ -198,135 +198,129 @@
             </div>
         </div>
 
-
     </div><!-- Fin animated -->
 </div><!-- Fin Content -->
 
-    {# @Todo: gérer mensuration null#}
+{# @Todo: gérer mensuration null#}
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-{#    <div style="width: 50%; height: 50%">#}
-{#        <canvas id="basDuCorps" width="200" height="50"></canvas>#}
-{#    </div>#}
+<script>
+    var ctxHDC = document.getElementById('hautDuCorps');
+    var ctxBDC = document.getElementById('basDuCorps');
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    var date = {{ date|json_encode|raw }};
 
-    <script>
-        var ctxHDC = document.getElementById('hautDuCorps');
-        var ctxBDC = document.getElementById('basDuCorps');
+    var cou = {{ cou|json_encode }};
+    var epaules = {{ epaules|json_encode }};
+    var poitrine = {{ poitrine|json_encode }};
+    var bras = {{ bras|json_encode }};
 
-        var date = {{ date|json_encode|raw }};
+    var tourDeTaille = {{ tourDeTaille|json_encode }};
+    var cuisses = {{ cuisses|json_encode }};
+    var mollets = {{ mollets|json_encode }};
 
-        var cou = {{ cou|json_encode }};
-        var epaules = {{ epaules|json_encode }};
-        var poitrine = {{ poitrine|json_encode }};
-        var bras = {{ bras|json_encode }};
-
-        var tourDeTaille = {{ tourDeTaille|json_encode }};
-        var cuisses = {{ cuisses|json_encode }};
-        var mollets = {{ mollets|json_encode }};
-
-        var hautChart = new Chart(ctxHDC, {
-            type: 'line',
-            data: {
-                labels: date,
-                datasets: [{
-                    label: 'Cou',
-                    data: cou,
-                    backgroundColor: [
-                        '#00c292',
-                    ],
-                    borderColor: [
-                        '#00c292',
-                    ],
-                    borderWidth: 3
-                },{
-                    label: 'Epaules',
-                    data: epaules,
-                    backgroundColor: [
-                        '#ab8ce4',
-                    ],
-                    borderColor: [
-                        '#ab8ce4',
-                    ],
-                    borderWidth: 3
-                },{
-                    label: 'Poitrine',
-                    data: poitrine,
-                    backgroundColor: [
-                        '#03a9f3',
-                    ],
-                    borderColor: [
-                        '#03a9f3',
-                    ],
-                    borderWidth: 3
-                },
-                    {
-                        label: 'Bras',
-                        data: bras,
-                        backgroundColor: [
-                            '#fb9678',
-                        ],
-                        borderColor: [
-                            '#fb9678',
-                        ],
-                        borderWidth: 3
-                    }
-                ]
+    var hautChart = new Chart(ctxHDC, {
+        type: 'line',
+        data: {
+            labels: date,
+            datasets: [{
+                label: 'Cou',
+                data: cou,
+                backgroundColor: [
+                    '#00c292',
+                ],
+                borderColor: [
+                    '#00c292',
+                ],
+                borderWidth: 3
+            },{
+                label: 'Epaules',
+                data: epaules,
+                backgroundColor: [
+                    '#ab8ce4',
+                ],
+                borderColor: [
+                    '#ab8ce4',
+                ],
+                borderWidth: 3
+            },{
+                label: 'Poitrine',
+                data: poitrine,
+                backgroundColor: [
+                    '#03a9f3',
+                ],
+                borderColor: [
+                    '#03a9f3',
+                ],
+                borderWidth: 3
             },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: false
-                    }
+                {
+                    label: 'Bras',
+                    data: bras,
+                    backgroundColor: [
+                        '#fb9678',
+                    ],
+                    borderColor: [
+                        '#fb9678',
+                    ],
+                    borderWidth: 3
+                }
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: false
                 }
             }
-        });
+        }
+    });
 
-        var basChart = new Chart(ctxBDC, {
-            type: 'line',
-            data: {
-                labels: date,
-                datasets: [{
-                    label: 'Tour de taille',
-                    data: tourDeTaille,
-                    backgroundColor: [
-                        '#00c292',
-                    ],
-                    borderColor: [
-                        '#00c292',
-                    ],
-                    borderWidth: 3
-                },{
-                    label: 'Cuisses',
-                    data: cuisses,
-                    backgroundColor: [
-                        '#ab8ce4',
-                    ],
-                    borderColor: [
-                        '#ab8ce4',
-                    ],
-                    borderWidth: 3
-                },{
-                    label: 'Mollets',
-                    data: mollets,
-                    backgroundColor: [
-                        '#03a9f3',
-                    ],
-                    borderColor: [
-                        '#03a9f3',
-                    ],
-                    borderWidth: 3
-                }]},
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: false
-                    }
+    var basChart = new Chart(ctxBDC, {
+        type: 'line',
+        data: {
+            labels: date,
+            datasets: [{
+                label: 'Tour de taille',
+                data: tourDeTaille,
+                backgroundColor: [
+                    '#00c292',
+                ],
+                borderColor: [
+                    '#00c292',
+                ],
+                borderWidth: 3
+            },{
+                label: 'Cuisses',
+                data: cuisses,
+                backgroundColor: [
+                    '#ab8ce4',
+                ],
+                borderColor: [
+                    '#ab8ce4',
+                ],
+                borderWidth: 3
+            },{
+                label: 'Mollets',
+                data: mollets,
+                backgroundColor: [
+                    '#03a9f3',
+                ],
+                borderColor: [
+                    '#03a9f3',
+                ],
+                borderWidth: 3
+            }]},
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: false
                 }
             }
-        });
+        }
+    });
 
-    </script>
+</script>
 
 {% endblock %}
