@@ -15,7 +15,6 @@
             top: 20px!important;
             right: -10px!important;
         }
-
     </style>
 
     <div class="breadcrumbs "><!-- Breadcrumbs-->
@@ -154,12 +153,13 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="box-title">Calories : Metabolisme de base = {{ metabolismeBase }} / Besoin calorique journalier = {{ besoinCalorique|round() }}</h4>
+                            <h4 class="box-title">Besoin calorique et macronutriment journalier</h4>
+                            <p>Donec accumsan, sapien et posuere semper, Metabolisme de base = {{ metabolismeBase }} sapien felis sodales tellus, id commodo nisi sapien et est. Besoin calorique journalier = {{ besoinCalorique|round() }} Mauris nisl odio, iaculis vitae pellentesque nec.</p>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="card-body">
-                                    <canvas id="cprPieChart" width="200" height="200"></canvas>
+                                    <div id="cprPieChart" style="width: 100%; height: 400px;"></div>
                                     {% set pdej = besoinCalorique * 0.25 %}
                                     {% set dej = besoinCalorique * 0.40 %}
                                     {% set gouter = besoinCalorique * 0.05 %}
@@ -169,10 +169,11 @@
 
                             <div class="col-lg-6">
                                 <div class="card-body">
-                                    <canvas id="macroChart" width="200" height="200"></canvas>
+                                    <div id="macroChart" style="width: 100%"></div>
                                     {% set glucide = besoinCalorique * 0.5 / 4 %}
                                     {% set proteine = besoinCalorique * 0.15 /4 %}
                                     {% set lipide = besoinCalorique * 0.35 / 9 %}
+                                    <p> Manger 5 fruits et légumes par jour suivez notre programme en cliquant ici </p>
                                 </div>
                             </div>
                         </div> <!-- /.row -->
@@ -188,6 +189,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="mb-3">Indice de Masse Corporelle</h4>
+                            <p>Donec accumsan, sapien et posuere semper, sapien felis sodales tellus, id commodo nisi sapien et est. Mauris nisl odio, iaculis vitae pellentesque nec.</p>
+                            <div id="imcChart" style="width: 100%; height: 400px"></div>
                         </div>
                     </div>
                 </div><!-- /# column -->
@@ -196,6 +199,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="mb-3">Indice de Masse Grasse</h4>
+                            <p>Donec accumsan, sapien et posuere semper, sapien felis sodales tellus, id commodo nisi sapien et est. Mauris nisl odio, iaculis vitae pellentesque nec.</p>
+                            <div id="imgChart" style="width: 100%; height: 400px"></div>
                         </div>
                     </div>
                 </div><!-- /# column -->
@@ -206,24 +211,10 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="box-title">Hydratation</h4>
+                            <h4 class="box-title">Hydratation quotidienne</h4>
+                            <p>Donec accumsan, sapien et posuere semper, sapien felis sodales tellus, id commodo nisi sapien et est. Mauris nisl odio, iaculis vitae pellentesque nec.</p>
+                            <div id="hydroChart" style="width: 100%; height: 400px"></div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card-body">
-
-
-                                </div> <!-- /.card-body -->
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="card-body">
-
-                                </div>
-                            </div>
-                        </div> <!-- /.row -->
-                        <div class="card-body"></div>
-
                     </div>
                 </div>
             </div><!-- Fin row hydratation -->
@@ -232,72 +223,233 @@
     </div><!-- /.content -->
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 
 <script>
-    new Chart(document.getElementById("cprPieChart"), {
-        type: 'doughnut',
-        data: {
-            labels: ["Petit déjeuner", "Déjeuner", "Gouter", "Dîner"],
-            datasets: [{
-                label: "Calories par repas",
-                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
-                data: [{{ pdej|round() }},{{ dej|round() }},{{ gouter|round() }},{{ diner|round() }}],
-                borderWidth: 5,
-                // cutout: 100,
-                hoverOffset: 5,
-            }]
+// apexchart
+
+    // macro chart
+    var options = {
+        series: [{{ glucide|round() }}, {{ proteine|round() }}, {{ lipide|round() }}],
+        labels: ['Glucide', 'Protéine', 'Lipide'],
+        chart: {
+            width: 380,
+            type: 'donut',
         },
-        options: {
-            plugins: {
-                legend:{
-                  position: 'bottom',
+        dataLabels: {
+            enabled: false
+        },
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
                 },
-                title:{
-                    display:true,
-                    text: 'Calories journalier',
-                    position: 'top',
-                },
-              tooltip: {
-                  // enabled: false,
-                  // intersect: false,
-              },
-            },
-            responsive: true,
+                legend: {
+                    show: false
+                }
+            }
+        }],
+        legend: {
+            position: 'right',
+            offsetY: 0,
+            height: 230,
         }
-    });
+    };
+
+    var chart = new ApexCharts(document.querySelector("#macroChart"), options);
+    chart.render();
 
 
-    new Chart(document.getElementById("macroChart"), {
-        type: 'bar',
-        data: {
-            labels: ["Glucides","Protéines","Lipides"],
-            datasets: [
-            {
-                // label: ["Glucides","Protéines","Lipides"],
-                data: [{{ glucide|round() }}, {{ proteine|round() }}, {{ lipide|round() }}],
-                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f"],
-            },
-            ]
+
+    // calorie chart
+    var options = {
+        series: [{
+            data: [{{ metabolismeBase|round() }}, {{ besoinCalorique|round() }}, {{ pdej|round() }}, {{ dej|round() }}, {{ gouter|round() }}, {{ diner|round() }}]
+        }],
+        chart: {
+            type: 'bar',
+            height: 380
         },
-        options: {
-            plugins: {
-                legend:{
-                    display: false,
-                    // position: 'bottom',
+        plotOptions: {
+            bar: {
+                barHeight: '100%',
+                distributed: true,
+                horizontal: true,
+                dataLabels: {
+                    position: 'bottom'
                 },
-                title:{
-                    display:true,
-                    text: 'Macronutriment journalier',
-                    position: 'top',
-                },
-                tooltip: {
-                    // enabled: false,
-                    // intersect: false,
-                },
+            }
+        },
+        colors: ['#33b2df', '#546E7A', '#d4526e', '#13d8aa', '#A5978B', '#2b908f', '#f9a3a4', '#90ee7e',
+            '#f48024', '#69d2e7'
+        ],
+        dataLabels: {
+            enabled: true,
+            textAnchor: 'start',
+            style: {
+                colors: ['#ffffff']
             },
-            responsive: true,
+            formatter: function (val, opt) {
+                return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+            },
+            offsetX: 0,
+            dropShadow: {
+                enabled: true
+            }
+        },
+        stroke: {
+            width: 2,
+            colors: ['#fff']
+        },
+        xaxis: {
+            categories: ['Métabolisme de base', 'besoin calorique journalier', 'Petit déjeuner', 'Déjeuner', 'Gouter', 'Diner'
+            ],
+        },
+        yaxis: {
+            labels: {
+                show: false
+            }
+        },
+        title: {
+            text: 'Calories',
+            align: 'center',
+            floating: true
+        },
+        subtitle: {
+            text: 'besoin en calories par jour',
+            align: 'center',
+        },
+        tooltip: {
+            theme: 'dark',
+            x: {
+                show: false
+            },
+            y: {
+                title: {
+                    formatter: function () {
+                        return ''
+                    }
+                }
+            }
         }
-    });
+    };
+
+    var chart = new ApexCharts(document.querySelector("#cprPieChart"), options);
+    chart.render();
+
+
+    // img chart
+    var options = {
+        series: [{{ img|round() }}],
+        chart: {
+            height: 350,
+            type: 'radialBar',
+        },
+        plotOptions: {
+            radialBar: {
+                hollow: {
+                    size: '70%',
+                }
+            },
+        },
+        labels: ['IMG'],
+    };
+
+    var chart = new ApexCharts(document.querySelector("#imgChart"), options);
+    chart.render();
+
+    // imc chart
+    var options = {
+        series: [{
+            name: 'Sous-poids entre 0 et 18.5',
+            data: [18.5]
+        }, {
+            name: 'Poids normal entre 18.5 et 24.9 ',
+            data: [24.9]
+        }, {
+            name: 'Surpoids entre 25 et 29.9 ',
+            data: [29.9]
+        }, {
+            name: 'Obésité à partir de 30',
+            data: [34.9]
+        }],
+        chart: {
+            type: 'bar',
+            height: 350,
+            stacked: true,
+        },
+        plotOptions: {
+            bar: {
+                horizontal: true,
+            },
+        },
+        stroke: {
+            width: 1,
+            colors: ['#fff']
+        },
+        xaxis: {
+            labels: {
+                show: false,
+            },
+        },
+        yaxis: {
+            labels: {
+                show: false,
+            },
+            title: {
+                text: undefined
+            },
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    return val + " Kg/m²"
+                }
+            }
+        },
+        fill: {
+            opacity: 1
+        },
+        legend: {
+            position: 'top',
+            horizontalAlign: 'left',
+            offsetX: 40
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#imcChart"), options);
+    chart.render();
+
+
+    //hydroChart
+    var options = {
+        series: [{
+            data: [{{ quantiteEau|round() }}]
+        }],
+        chart: {
+            type: 'bar',
+            height: 350
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                horizontal: true,
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        xaxis: {
+            categories: ['Hydratation (ml/jour)'
+            ],
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#hydroChart"), options);
+    chart.render();
+
 </script>
 
 

@@ -22,10 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment=" interface indicateur calorie chart #11">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment=" interface indicateur macronutriment chart #11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +322,17 @@
       <workItem from="1618947400523" duration="8650000" />
       <workItem from="1619017391799" duration="2734000" />
       <workItem from="1619034776572" duration="10856000" />
-      <workItem from="1619103751015" duration="3630000" />
+      <workItem from="1619103751015" duration="3924000" />
+      <workItem from="1619120621913" duration="4840000" />
+      <workItem from="1619205224269" duration="616000" />
+      <workItem from="1619272702506" duration="1979000" />
+      <workItem from="1619636807387" duration="4850000" />
+      <workItem from="1619734697329" duration="6281000" />
+      <workItem from="1620076423182" duration="894000" />
+      <workItem from="1620124608420" duration="1281000" />
+      <workItem from="1620334405182" duration="2589000" />
+      <workItem from="1620425511256" duration="2014000" />
+      <workItem from="1620566169577" duration="1317000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -605,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619050543047</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary=" interface indicateur macronutriment chart #11">
+      <created>1619108357713</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1619108357713</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +640,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="template recette + ajout dans sidebar + crud recette/ingredient/ingredientRecette" />
     <MESSAGE value="lister utilisateur =&gt; controller/template" />
     <MESSAGE value="ajout compte =&gt; controller/template + update onetoone de Utilisateur/profil/adresse" />
     <MESSAGE value="crud adresse/profil" />
@@ -649,7 +664,8 @@
     <MESSAGE value=" chart haut du corps / calcul pourcentage restant #11" />
     <MESSAGE value=" chart bas du corps / calcul pourcentage restant #11" />
     <MESSAGE value=" interface indicateur calorie chart #11" />
-    <option name="LAST_COMMIT_MESSAGE" value=" interface indicateur calorie chart #11" />
+    <MESSAGE value=" interface indicateur macronutriment chart #11" />
+    <option name="LAST_COMMIT_MESSAGE" value=" interface indicateur macronutriment chart #11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -680,10 +696,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1619050544595">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1619108358998">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1619050544595" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1619108358998" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1618259757079">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
