@@ -1,22 +1,21 @@
 {% form_theme form 'bootstrap_4_layout.html.twig' %}
 {% extends 'base.html.twig' %}
 
-{% block title %}IMC{% endblock %}
+{% block title %}Poids idéal{% endblock %}
 
 {% block body %}
 
-    <h1>IMC</h1>
+    <h1>Poids idéal</h1>
 
     {{ form_start(form) }}
     {{ form_widget(form) }}
     <button class="btn btn-outline-primary">{{ button_label|default('Calculer') }}</button>
     {{ form_end(form) }}
 
-    {% if imc == null %}
+    {% if poidsIdeal == null %}
         <h1>0</h1>
     {% else %}
-        <h1>IMC = {{ imc }} </h1>
+        <h1>Poids idéal = {{ poidsIdeal }} kg </h1>
     {% endif %}
-
 
 {% endblock %}

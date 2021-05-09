@@ -1,0 +1,22 @@
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+{% extends 'base.html.twig' %}
+
+{% block title %}Calories par jour{% endblock %}
+
+{% block body %}
+
+    <h1>Calories par jour</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn btn-outline-primary">{{ button_label|default('Calculer') }}</button>
+    {{ form_end(form) }}
+
+    {% if metabolismeBase == null and besoinCalorique == null %}
+        <h1>0</h1>
+    {% else %}
+        <h1>Métabolisme de base (dépense au repos) = {{ metabolismeBase|round() }} kcal </h1>
+        <h1>Besoin calorique (dépense énergétique totale) = {{ besoinCalorique|round() }} kcal </h1>
+    {% endif %}
+
+{% endblock %}

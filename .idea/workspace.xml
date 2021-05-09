@@ -22,9 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment=" interface indicateur macronutriment chart #11">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="modification chart =&gt; apexchart #11">
+      <change afterPath="$PROJECT_DIR$/templates/outils/body_visualizer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/outils/calculatrice_calories_jour.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/outils/calculatrice_calories_jour_repas.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/outils/calculatrice_hydratation.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/outils/calculatrice_poids_ideal.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Outils/OutilsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/OutilsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/outils/calculatrice_imc.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/calculatrice_imc.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +339,7 @@
       <workItem from="1620124608420" duration="1281000" />
       <workItem from="1620334405182" duration="2589000" />
       <workItem from="1620425511256" duration="2014000" />
-      <workItem from="1620566169577" duration="1317000" />
+      <workItem from="1620566169577" duration="6787000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -621,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619108357713</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="modification chart =&gt; apexchart #11">
+      <created>1620567907805</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1620567907805</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +654,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lister utilisateur =&gt; controller/template" />
     <MESSAGE value="ajout compte =&gt; controller/template + update onetoone de Utilisateur/profil/adresse" />
     <MESSAGE value="crud adresse/profil" />
     <MESSAGE value="redirection after login" />
@@ -665,7 +678,8 @@
     <MESSAGE value=" chart bas du corps / calcul pourcentage restant #11" />
     <MESSAGE value=" interface indicateur calorie chart #11" />
     <MESSAGE value=" interface indicateur macronutriment chart #11" />
-    <option name="LAST_COMMIT_MESSAGE" value=" interface indicateur macronutriment chart #11" />
+    <MESSAGE value="modification chart =&gt; apexchart #11" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification chart =&gt; apexchart #11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -676,10 +690,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="653" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615830888355" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617412538184">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620569876435">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1617412538184" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620569876435" />
     <state x="736" y="452" key="ComposerInitDialogKey" timestamp="1613781679085">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -696,10 +710,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1619108358998">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1620567909658">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1619108358998" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620567909658" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1618259757079">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

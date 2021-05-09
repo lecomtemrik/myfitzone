@@ -1,0 +1,30 @@
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+{% extends 'base.html.twig' %}
+
+{% block title %}Calories par jour par repas{% endblock %}
+
+{% block body %}
+
+    <h1>Calories par jour par repas</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn btn-outline-primary">{{ button_label|default('Calculer') }}</button>
+    {{ form_end(form) }}
+
+    {% if besoinCalorique == null %}
+        <h1>0</h1>
+    {% else %}
+
+        {% set pdej = besoinCalorique * 0.25 %}
+        {% set dej = besoinCalorique * 0.40 %}
+        {% set gouter = besoinCalorique * 0.05 %}
+        {% set diner = besoinCalorique * 0.30 %}
+        <h1>Besoin calorique (dépense énergétique totale) = {{ besoinCalorique|round() }} kcal </h1>
+        <h1> petit déjeuner = {{ pdej|round() }} </h1>
+        <h1> déjeuner = {{ dej|round() }} </h1>
+        <h1> gouter = {{ gouter|round() }} </h1>
+        <h1> Diner = {{ diner|round() }} </h1>
+    {% endif %}
+
+{% endblock %}
