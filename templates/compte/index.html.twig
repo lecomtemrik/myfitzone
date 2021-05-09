@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Compte{% endblock %}
+{% block title %}Profil{% endblock %}
 
 {% block body %}
 
@@ -15,6 +15,12 @@
                     {% else %}
                         <img class="user-avatar rounded-circle" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb') }}">
                     {% endif %}
+                    <br>
+                    <h3>{{ app.user.profil.nom }} {{ app.user.profil.prenom }}</h3>
+                    <h6>Administrateur</h6>
+                    <img style="width: 80px; height: 80px" src="images/pionnier.png">
+                    <img style="width: 95px; height: 95px" src="images/stats.png">
+                    <p>Donec accumsan, sapien et posuere semper, sapien felis sodales tellus.</p>
                 </div>
             </div>
         </div>

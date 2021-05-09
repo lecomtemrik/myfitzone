@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="ajout des calculatrices et outils sections Calculatrices de la navigation #11" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="aucune idée de ce commit mais il me fait chier #11">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compte/index.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,19 +202,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public\style" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\default" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\models" />
-      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\models" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\compte" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosProfileBundle" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle" />
       <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\bundles\NucleosUserBundle\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public\images" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public\style" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\public" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\default" />
+      <recent name="C:\PhpStormProject\SymfonyProject\myfitzone\templates\models" />
     </key>
   </component>
   <component name="RunManager">
@@ -330,6 +334,7 @@
       <workItem from="1620334405182" duration="2589000" />
       <workItem from="1620425511256" duration="2014000" />
       <workItem from="1620566169577" duration="7043000" />
+      <workItem from="1620598622245" duration="3669000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -632,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620573599949</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="aucune idée de ce commit mais il me fait chier #11">
+      <created>1620598790912</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1620598790912</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +663,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="crud adresse/profil" />
     <MESSAGE value="redirection after login" />
     <MESSAGE value="interface admin" />
     <MESSAGE value="bundle vich upload images" />
@@ -676,7 +687,8 @@
     <MESSAGE value=" interface indicateur macronutriment chart #11" />
     <MESSAGE value="modification chart =&gt; apexchart #11" />
     <MESSAGE value="ajout des calculatrices et outils sections Calculatrices de la navigation #11" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout des calculatrices et outils sections Calculatrices de la navigation #11" />
+    <MESSAGE value="aucune idée de ce commit mais il me fait chier #11" />
+    <option name="LAST_COMMIT_MESSAGE" value="aucune idée de ce commit mais il me fait chier #11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -707,10 +719,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1620573601407">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1620598792494">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620573601407" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620598792494" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1618259757079">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -165,8 +165,11 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="{{ path('compte') }}"><i class="fa fa- user"></i>Compte</a>
-
+                            {% if app.user.profil.pseudo == null %}
+                                <a class="nav-link" href="{{ path('compte') }}"><i class="fa fa- user"></i>{{ app.user.profil.prenom }}</a>
+                            {% else %}
+                                <a class="nav-link" href="{{ path('compte') }}"><i class="fa fa- user"></i>{{ app.user.profil.pseudo }}</a>
+                            {% endif %}
                             <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span class="count">13</span></a>
 
                             <a class="nav-link" href="#"><i class="fa fa -cog"></i>Paramètres</a>
