@@ -6,64 +6,68 @@
 
     <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col col-lg-12">
+
+            <div class="col col-lg-2"></div>
+            <div class="col-md-auto">
                 <div class="text-center">
                     {% if app.user.profil.imageName == null %}
                         <img class="user-avatar rounded-circle" src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
                     {% elseif 'https' in app.user.profil.imageName %}
-                        <img class="user-avatar rounded-circle" src="{{ app.user.profil.imageName }}">
+                        <img class="user-avatar rounded-circle" src="{{ app.user.profil.imageName }}"><br>
                     {% else %}
-                        <img class="user-avatar rounded-circle" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb') }}">
+                        <img class="user-avatar rounded-circle" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb') }}"><br>
                     {% endif %}
                     <br>
                     <h3>{{ app.user.profil.nom }} {{ app.user.profil.prenom }}</h3>
                     <h6>Administrateur</h6>
+                    <img style="width: 70px; height: 70px" src="images/Welcome.png">
                     <img style="width: 80px; height: 80px" src="images/pionnier.png">
                     <img style="width: 95px; height: 95px" src="images/stats.png">
-                    <p>Donec accumsan, sapien et posuere semper, sapien felis sodales tellus.</p>
+{#                    <p>Donec accumsan, sapien et posuere semper, sapien felis sodales tellus.</p>#}
                 </div>
             </div>
+            <div class="col col-lg-2"></div>
         </div>
 
         <br>
 
-        <div class="row">
-            <div class="col">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="pills-profil-tab" data-toggle="pill" href="#pills-profil" role="tab" aria-controls="pills-profil" aria-selected="true">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-adresse-tab" data-toggle="pill" href="#pills-adresse" role="tab" aria-controls="pills-adresse" aria-selected="false">Adresse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-adresse-tab" data-toggle="pill" href="#pills-adresse" role="tab" aria-controls="pills-adresse" aria-selected="false">Adresse</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
+        <div class="row justify-content-md-center">
 
+            <div class="col col-lg-2"></div>
+            <div class="col-md-auto">
+{#                <div class="text-center">#}
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-profil-tab" data-toggle="pill" href="#pills-profil" role="tab" aria-controls="pills-profil" aria-selected="true">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-adresse-tab" data-toggle="pill" href="#pills-adresse" role="tab" aria-controls="pills-adresse" aria-selected="false">Adresse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-adresse-tab" data-toggle="pill" href="#pills-adresse" role="tab" aria-controls="pills-adresse" aria-selected="false">Adresse</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-profil" role="tabpanel" aria-labelledby="pills-profil-tab">
+                            <p>pseudo : {{ app.user.profil.pseudo }}</p>
+                            <p>nom : {{ app.user.profil.nom }}</p>
+                            <p>prenom : {{ app.user.profil.prenom }}</p>
+                            <p>email : {{ app.user.email }}</p>
+                            <p>Date de naissance : {{ app.user.profil.dateNaissance|date("d/m/Y", "Europe/Paris") }}</p>
+                            <p>Numéro de téléphone : {{ app.user.profil.telephone }}</p>
+                            <a href="{{ path('profil_edit', {'id': app.user.profil.id}) }}">Modifier</a>
+                        </div>
 
-                    <div class="tab-pane fade show active" id="pills-profil" role="tabpanel" aria-labelledby="pills-profil-tab">
-                        <p>pseudo : {{ app.user.profil.pseudo }}</p>
-                        <p>nom : {{ app.user.profil.nom }}</p>
-                        <p>prenom : {{ app.user.profil.prenom }}</p>
-                        <p>email : {{ app.user.email }}</p>
-                        <p>Date de naissance : {{ app.user.profil.dateNaissance|date("d/m/Y", "Europe/Paris") }}</p>
-                        <p>Numéro de téléphone : {{ app.user.profil.telephone }}</p>
-                        <a href="{{ path('profil_edit', {'id': app.user.profil.id}) }}">Modifier</a>
+                        <div class="tab-pane fade" id="pills-adresse" role="tabpanel" aria-labelledby="pills-adresse-tab">
+                            <p>adresse : {{ app.user.adresse.adressePostale }}</p>
+                            <p>pays : {{ app.user.adresse.pays }}</p>
+                            <p>ville : {{ app.user.adresse.ville }}</p>
+                            <p>code postal : {{ app.user.adresse.codePostal }}</p>
+                        </div>
                     </div>
-
-
-                    <div class="tab-pane fade" id="pills-adresse" role="tabpanel" aria-labelledby="pills-adresse-tab">
-                        <p>adresse : {{ app.user.adresse.adressePostale }}</p>
-                        <p>pays : {{ app.user.adresse.pays }}</p>
-                        <p>ville : {{ app.user.adresse.ville }}</p>
-                        <p>code postal : {{ app.user.adresse.codePostal }}</p>
-                    </div>
-
-
-                </div>
+{#                </div>#}
             </div>
+            <div class="col col-lg-2"></div>
         </div>
 
     </div>

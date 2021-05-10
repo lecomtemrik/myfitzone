@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="aucune idée de ce commit mais il me fait chier #11">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="premier commit modification profil #12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compte/index.html.twig" afterDir="false" />
@@ -198,7 +198,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/models" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -334,7 +334,9 @@
       <workItem from="1620334405182" duration="2589000" />
       <workItem from="1620425511256" duration="2014000" />
       <workItem from="1620566169577" duration="7043000" />
-      <workItem from="1620598622245" duration="3669000" />
+      <workItem from="1620598622245" duration="3888000" />
+      <workItem from="1620684938463" duration="208000" />
+      <workItem from="1620685158805" duration="4812000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -644,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620598790912</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="premier commit modification profil #12">
+      <created>1620602724268</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1620602724268</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +672,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="redirection after login" />
     <MESSAGE value="interface admin" />
     <MESSAGE value="bundle vich upload images" />
     <MESSAGE value="configuration d'upload d'image avec vich et gaufrette #6" />
@@ -688,7 +696,8 @@
     <MESSAGE value="modification chart =&gt; apexchart #11" />
     <MESSAGE value="ajout des calculatrices et outils sections Calculatrices de la navigation #11" />
     <MESSAGE value="aucune idée de ce commit mais il me fait chier #11" />
-    <option name="LAST_COMMIT_MESSAGE" value="aucune idée de ce commit mais il me fait chier #11" />
+    <MESSAGE value="premier commit modification profil #12" />
+    <option name="LAST_COMMIT_MESSAGE" value="premier commit modification profil #12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -715,14 +724,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="838" y="438" key="Github.ShareDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613418317482" />
-    <state x="461" y="185" key="SettingsEditor" timestamp="1613429985539">
+    <state x="461" y="185" key="SettingsEditor" timestamp="1620685148537">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613429985539" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1620598792494">
+    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620685148537" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1620602725448">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620598792494" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620602725448" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1618259757079">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
