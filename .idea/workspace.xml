@@ -22,10 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="premier commit modification profil #12">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="update interface compte/profil #12">
+      <change beforePath="$PROJECT_DIR$/.idea/myfitzone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myfitzone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compte/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +192,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
       <path value="$PROJECT_DIR$/vendor/twig/markdown-extra" />
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oP3SNC55jiMER5Ze34hCMgksUX" />
@@ -336,7 +347,9 @@
       <workItem from="1620566169577" duration="7043000" />
       <workItem from="1620598622245" duration="3888000" />
       <workItem from="1620684938463" duration="208000" />
-      <workItem from="1620685158805" duration="4812000" />
+      <workItem from="1620685158805" duration="5032000" />
+      <workItem from="1620743738129" duration="1322000" />
+      <workItem from="1620762166143" duration="8440000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -653,7 +666,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620602724268</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="update interface compte/profil #12">
+      <created>1620691097355</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1620691097355</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,7 +692,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="interface admin" />
     <MESSAGE value="bundle vich upload images" />
     <MESSAGE value="configuration d'upload d'image avec vich et gaufrette #6" />
     <MESSAGE value="ProfilVoter pour gérer les accès/ configuration upload image pour recette et profil #6" />
@@ -697,7 +716,8 @@
     <MESSAGE value="ajout des calculatrices et outils sections Calculatrices de la navigation #11" />
     <MESSAGE value="aucune idée de ce commit mais il me fait chier #11" />
     <MESSAGE value="premier commit modification profil #12" />
-    <option name="LAST_COMMIT_MESSAGE" value="premier commit modification profil #12" />
+    <MESSAGE value="update interface compte/profil #12" />
+    <option name="LAST_COMMIT_MESSAGE" value="update interface compte/profil #12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -728,10 +748,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620685148537" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1620602725448">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1620691098669">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620602725448" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620691098669" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1618259757079">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

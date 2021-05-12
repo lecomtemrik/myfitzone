@@ -108,35 +108,47 @@
                             <div class="card-body">
                                 <div class="progress-box progress-1">
                                     <h4 class="por-title">Cou</h4>
+                                    {% if lastMensuration == null %}
+                                    {% else %}
                                     {% set couPC = lastMensuration.cou * 100 / lastMensurationObjectif.cou %}
-                                    <div class="por-txt">{{ lastMensuration.cou }}cm sur {{ lastMensurationObjectif.cou }}cm ( {{ couPC|round(1) }}% de l'objectif atteint )</div>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: {{ couPC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                        <div class="por-txt">{{ lastMensuration.cou }}cm sur {{ lastMensurationObjectif.cou }}cm ( {{ couPC|round(1) }}% de l'objectif atteint )</div>
+                                        <div class="progress mb-2" style="height: 5px;">
+                                            <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: {{ couPC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    {% endif %}
                                 </div>
                                 <div class="progress-box progress-2">
                                     <h4 class="por-title">Epaules</h4>
+                                    {% if lastMensuration == null %}
+                                    {% else %}
                                     {% set epaulePC = lastMensuration.epaules * 100 / lastMensurationObjectif.epaules %}
-                                    <div class="por-txt">{{ lastMensuration.epaules }}cm sur {{ lastMensurationObjectif.epaules }}cm ( {{ epaulePC|round(1) }}% de l'objectif atteint)</div>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: {{ epaulePC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                        <div class="por-txt">{{ lastMensuration.epaules }}cm sur {{ lastMensurationObjectif.epaules }}cm ( {{ epaulePC|round(1) }}% de l'objectif atteint)</div>
+                                        <div class="progress mb-2" style="height: 5px;">
+                                            <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: {{ epaulePC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    {% endif %}
                                 </div>
                                 <div class="progress-box progress-2">
                                     <h4 class="por-title">Poitrine</h4>
+                                    {% if lastMensuration == null %}
+                                    {% else %}
                                     {% set poitrinePC = lastMensuration.poitrine * 100 / lastMensurationObjectif.poitrine %}
-                                    <div class="por-txt">{{ lastMensuration.poitrine }}cm sur {{ lastMensurationObjectif.poitrine }}cm ( {{ poitrinePC|round(1) }}% de l'objectif atteint)</div>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: {{ poitrinePC }}%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                        <div class="por-txt">{{ lastMensuration.poitrine }}cm sur {{ lastMensurationObjectif.poitrine }}cm ( {{ poitrinePC|round(1) }}% de l'objectif atteint)</div>
+                                        <div class="progress mb-2" style="height: 5px;">
+                                            <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: {{ poitrinePC }}%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    {% endif %}
                                 </div>
                                 <div class="progress-box progress-2">
                                     <h4 class="por-title">Bras</h4>
+                                    {% if lastMensuration == null %}
+                                    {% else %}
                                     {% set brasPC = lastMensuration.bras * 100 / lastMensurationObjectif.bras %}
-                                    <div class="por-txt">{{ lastMensuration.bras }}cm sur {{ lastMensurationObjectif.bras }}cm ( {{ brasPC|round(1) }}% de l'objectif atteint)</div>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: {{ brasPC }}%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                        <div class="por-txt">{{ lastMensuration.bras }}cm sur {{ lastMensurationObjectif.bras }}cm ( {{ brasPC|round(1) }}% de l'objectif atteint)</div>
+                                        <div class="progress mb-2" style="height: 5px;">
+                                            <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: {{ brasPC }}%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    {% endif %}
                                 </div>
                             </div> <!-- /.card-body -->
                         </div>
@@ -160,27 +172,36 @@
                             <div class="card-body">
                                 <div class="progress-box progress-1">
                                     <h4 class="por-title">Tour de taille</h4>
+                                    {% if lastMensuration == null %}
+                                    {% else %}
                                     {% set tourDeTaillePC = lastMensuration.tourDeTaille * 100 / lastMensurationObjectif.tourDeTaille %}
-                                    <div class="por-txt">{{ lastMensuration.tourDeTaille }}cm sur {{ lastMensurationObjectif.tourDeTaille }}cm ( {{ tourDeTaillePC|round(1) }}% de l'objectif atteint )</div>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: {{ tourDeTaillePC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                        <div class="por-txt">{{ lastMensuration.tourDeTaille }}cm sur {{ lastMensurationObjectif.tourDeTaille }}cm ( {{ tourDeTaillePC|round(1) }}% de l'objectif atteint )</div>
+                                        <div class="progress mb-2" style="height: 5px;">
+                                            <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: {{ tourDeTaillePC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    {% endif %}
                                 </div>
                                 <div class="progress-box progress-2">
                                     <h4 class="por-title">Cuisses</h4>
+                                    {% if lastMensuration == null %}
+                                    {% else %}
                                     {% set cuissesPC = lastMensuration.cuisses * 100 / lastMensurationObjectif.cuisses %}
-                                    <div class="por-txt">{{ lastMensuration.cuisses }}cm sur {{ lastMensurationObjectif.cuisses }}cm ( {{ cuissesPC|round(1) }}% de l'objectif atteint)</div>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: {{ cuissesPC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                        <div class="por-txt">{{ lastMensuration.cuisses }}cm sur {{ lastMensurationObjectif.cuisses }}cm ( {{ cuissesPC|round(1) }}% de l'objectif atteint)</div>
+                                        <div class="progress mb-2" style="height: 5px;">
+                                            <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: {{ cuissesPC }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    {% endif %}
                                 </div>
                                 <div class="progress-box progress-2">
                                     <h4 class="por-title">Mollets</h4>
+                                    {% if lastMensuration == null %}
+                                    {% else %}
                                     {% set molletsPC = lastMensuration.mollets * 100 / lastMensurationObjectif.mollets %}
-                                    <div class="por-txt">{{ lastMensuration.mollets }}cm sur {{ lastMensurationObjectif.mollets }}cm ( {{ molletsPC|round(1) }}% de l'objectif atteint)</div>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: {{ molletsPC }}%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                                        <div class="por-txt">{{ lastMensuration.mollets }}cm sur {{ lastMensurationObjectif.mollets }}cm ( {{ molletsPC|round(1) }}% de l'objectif atteint)</div>
+                                        <div class="progress mb-2" style="height: 5px;">
+                                            <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: {{ molletsPC }}%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    {% endif %}
                                 </div>
                             </div> <!-- /.card-body -->
                         </div>

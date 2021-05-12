@@ -11,7 +11,7 @@
             <div class="col-md-auto">
                 <div class="text-center">
                     {% if app.user.profil.imageName == null %}
-                        <img class="user-avatar rounded-circle" src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
+                        <img style="height: 150px; width: 150px" class="user-avatar rounded-circle" src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg">
                     {% elseif 'https' in app.user.profil.imageName %}
                         <img class="user-avatar rounded-circle" src="{{ app.user.profil.imageName }}"><br>
                     {% else %}
