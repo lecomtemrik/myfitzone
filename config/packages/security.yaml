@@ -43,8 +43,17 @@ security:
         - { path: ^/profile, role: IS_AUTHENTICATED_REMEMBERED }
 #        - { path: ^/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin, roles: ROLE_ADMIN }
-        - { path: ^/articles, roles: ROLE_ADMIN }
-        - { path: ^/categorie, roles: ROLE_ADMIN }
-        - { path: ^/souscategorie, roles: ROLE_ADMIN }
+#        - { path: ^/categorie, roles: ROLE_ADMIN }
+#        - { path: ^/souscategorie, roles: ROLE_ADMIN }
+        - { path: ^/adresse, roles: ROLE_ADMIN }
+        - { path: ^/utilisateur, roles: ROLE_ADMIN }
+        - { path: ^/profil, roles: ROLE_ADMIN }
+
+        - { path: ^/articles, roles: ROLE_REDAC }
+        - { path: ^/souscategorie, roles: ROLE_REDAC }
+        - { path: ^/categorie, roles: ROLE_REDAC }
+        - { path: ^/recettes, roles: ROLE_REDAC }
+        - { path: ^/ingredientrecette, roles: ROLE_REDAC }
+        - { path: ^/ingredient, roles: ROLE_REDAC }
 
         # - { path: ^/profile, roles: ROLE_USER }

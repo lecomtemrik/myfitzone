@@ -1,3 +1,21 @@
-body {
-    background-color: lightgray;
+/* #################### BALISE #################### */
+.fw-9 {
+    font-weight: 900;
 }
+
+/* #################### BASE #################### */
+.jumbotron {
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_1280.jpg');
+}
+
+.nb-black {
+    color: black;
+}
+
+.jumbotron-title {
+    text-align: center;
+    color: white;
+}
+
+/* #################### RESPONSIVE #################### */
+

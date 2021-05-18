@@ -1,0 +1,15 @@
+{#
+    * Admin/AdresseController.php
+    * ajout d'une nouvelle adresse
+#}
+{% extends 'base.html.twig' %}
+
+{% block title %}New Adresse{% endblock %}
+
+{% block body %}
+    <h1>Create new Adresse</h1>
+
+    {{ include('admin/adresse/_form.html.twig') }}
+
+    <a href="{{ path('adresse_index') }}">back to list</a>
+{% endblock %}

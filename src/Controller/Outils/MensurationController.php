@@ -33,8 +33,10 @@ class MensurationController extends AbstractController
         $formObjectif->handleRequest($request);
 
         $utilisateur = $this->getUser();
-        if ($utilisateur == null){
-            $mensurationArray = null;
+        $mensurationUtilisateur = $mensurationRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
+        $mensurationObjectifUtilisateur = $mensurationObjectifRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
+        $mensurationArray = null;
+        if ($utilisateur == null or empty($mensurationUtilisateur)){
             $lastMensuration = null;
             $lastMensurationObjectif = null;
 
@@ -48,8 +50,6 @@ class MensurationController extends AbstractController
             $molletsArrayValues = null;
             $dateArrayValues = null;
         }else{
-            $mensurationUtilisateur = $mensurationRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
-            $mensurationObjectifUtilisateur = $mensurationObjectifRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
 
             //traitement de date
             foreach ($mensurationUtilisateur as $item){

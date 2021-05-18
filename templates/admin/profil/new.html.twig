@@ -1,0 +1,15 @@
+{#
+    * Admin/ProfilController.php
+    * Ajout d'un nouveau profil
+#}
+{% extends 'base.html.twig' %}
+
+{% block title %}New Profil{% endblock %}
+
+{% block body %}
+    <h1>Create new Profil</h1>
+
+    {{ include('admin/profil/_form.html.twig') }}
+
+    <a href="{{ path('profil_index') }}">back to list</a>
+{% endblock %}
