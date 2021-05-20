@@ -22,73 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="changement un peu partout">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="nettoyage code/arborescence + commentaire">
+      <change afterPath="$PROJECT_DIR$/templates/menu/_sidebar-redacteur.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdresseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdresseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Redacteur/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategorieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Redacteur/CategorieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CompteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Utilisateur/CompteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IngredientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Redacteur/IngredientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IngredientRecetteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Redacteur/IngredientRecetteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProfilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProfilController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RecetteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Redacteur/RecetteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SousCategorieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Redacteur/SousCategorieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UtilisateurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/UtilisateurController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adresse/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/adresse/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adresse/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/adresse/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adresse/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/adresse/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adresse/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/adresse/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adresse/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/adresse/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adresse/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/adresse/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/article/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/article/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/article/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/article/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/article/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/article/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/categorie/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/categorie/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/categorie/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/categorie/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/categorie/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categorie/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/categorie/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/utilisateur/compte/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/profil/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient_recette/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient_recette/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient_recette/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient_recette/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient_recette/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient_recette/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient_recette/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient_recette/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient_recette/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ingredient_recette/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient_recette/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profil/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/profil/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profil/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/ingredient_recette/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profil/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/profil/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/profil/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profil/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/profil/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profil/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/profil/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recette/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/recette/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recette/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/recette/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recette/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/recette/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recette/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/recette/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recette/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/recette/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/recette/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/recette/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sous_categorie/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/sous_categorie/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sous_categorie/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/sous_categorie/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sous_categorie/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/sous_categorie/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sous_categorie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/sous_categorie/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sous_categorie/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/sous_categorie/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sous_categorie/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/redacteur/sous_categorie/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/utilisateur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/utilisateur/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +37,13 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -259,6 +203,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/models" />
@@ -408,7 +353,8 @@
       <workItem from="1621008673425" duration="3726000" />
       <workItem from="1621167193521" duration="13852000" />
       <workItem from="1621291790269" duration="117000" />
-      <workItem from="1621374801565" duration="1363000" />
+      <workItem from="1621374801565" duration="1562000" />
+      <workItem from="1621546082884" duration="2784000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -739,7 +685,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620778033318</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="nettoyage code/arborescence + commentaire">
+      <created>1621376365882</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1621376365882</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,7 +711,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="configuration d'upload d'image avec vich et gaufrette #6" />
     <MESSAGE value="ProfilVoter pour gérer les accès/ configuration upload image pour recette et profil #6" />
     <MESSAGE value="liip bundle pour la gestion de la taille des images  #6" />
     <MESSAGE value="dernier commit avant merge  #6" />
@@ -783,7 +735,8 @@
     <MESSAGE value="premier commit modification profil #12" />
     <MESSAGE value="update interface compte/profil #12" />
     <MESSAGE value="changement un peu partout" />
-    <option name="LAST_COMMIT_MESSAGE" value="changement un peu partout" />
+    <MESSAGE value="nettoyage code/arborescence + commentaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="nettoyage code/arborescence + commentaire" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -814,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620685148537" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1620778034871">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1621376367520">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620778034871" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1621376367520" />
     <state x="493" y="200" key="run.anything.popup" timestamp="1620900690717">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

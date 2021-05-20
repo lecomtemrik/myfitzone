@@ -43,6 +43,8 @@
 <aside id="left-panel" class="left-panel"><!-- navigation left sidebar -->
     {% if is_granted('ROLE_ADMIN') %}
         {{ include('menu/_sidebar-admin.html.twig') }}
+    {% elseif is_granted('ROLE_REDAC') %}
+        {{ include('menu/_sidebar-redacteur.html.twig') }}
     {% else %}
         <nav class="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" class="main-menu collapse navbar-collapse">
