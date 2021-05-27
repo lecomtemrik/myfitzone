@@ -22,10 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="nettoyage code/arborescence + commentaire">
-      <change afterPath="$PROJECT_DIR$/templates/menu/_sidebar-redacteur.html.twig" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="Interface redacteur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/utilisateur/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/utilisateur/compte/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +353,9 @@
       <workItem from="1621167193521" duration="13852000" />
       <workItem from="1621291790269" duration="117000" />
       <workItem from="1621374801565" duration="1562000" />
-      <workItem from="1621546082884" duration="2784000" />
+      <workItem from="1621546082884" duration="2826000" />
+      <workItem from="1621848240788" duration="2510000" />
+      <workItem from="1622139730577" duration="5729000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1613418397155</created>
@@ -692,7 +693,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621376365882</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Interface redacteur">
+      <created>1621549380160</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1621549380160</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,7 +719,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ProfilVoter pour gérer les accès/ configuration upload image pour recette et profil #6" />
     <MESSAGE value="liip bundle pour la gestion de la taille des images  #6" />
     <MESSAGE value="dernier commit avant merge  #6" />
     <MESSAGE value="social login oauth2 bundle paramétrage de connexion avec google et préparation connexion facebook  #6" />
@@ -736,7 +743,8 @@
     <MESSAGE value="update interface compte/profil #12" />
     <MESSAGE value="changement un peu partout" />
     <MESSAGE value="nettoyage code/arborescence + commentaire" />
-    <option name="LAST_COMMIT_MESSAGE" value="nettoyage code/arborescence + commentaire" />
+    <MESSAGE value="Interface redacteur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface redacteur" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -767,10 +775,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620685148537" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1621376367520">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1621549381668">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1621376367520" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1621549381668" />
     <state x="493" y="200" key="run.anything.popup" timestamp="1620900690717">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
