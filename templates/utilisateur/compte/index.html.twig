@@ -8,131 +8,97 @@
 
 {% block body %}
 
-    <div class="container">
-{#        <div class="row justify-content-md-center shadow p-3 mb-5 bg-white rounded">#}
-        <div class="row shadow p-3 mb-5 bg-white rounded">
+{#<div class="container">#}
 
-            <div class="col-4">
-                <div class="text-center">
-                    {% if app.user.profil.imageName == null %}
-                        <img style="height: 150px; width: 150px" class="user-avatar rounded-circle" src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg">
-                    {% elseif 'https' in app.user.profil.imageName %}
-                        <img class="user-avatar rounded-circle" src="{{ app.user.profil.imageName }}"><br>
-                    {% else %}
-                        <img class="user-avatar rounded-circle" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb') }}"><br>
-                    {% endif %}
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col-12 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="text-center">
+                                {% if app.user.profil.imageName == null %}
+                                    <img style="height: 150px; width: 150px" class="user-avatar rounded-circle" src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg">
+                                {% elseif 'https' in app.user.profil.imageName %}
+                                    <img class="user-avatar rounded-circle" src="{{ app.user.profil.imageName }}"><br>
+                                {% else %}
+                                    <img class="user-avatar rounded-circle" src="{{ vich_uploader_asset(app.user.profil, 'imageFile') | imagine_filter('thumb') }}"><br>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <h3>{{ app.user.profil.nom }} {{ app.user.profil.prenom }}</h3>
+                            <h6>Administrateur</h6>
+                        </div>
+
+                        <div class="col-4">
+                            <img style="width: 70px; height: 70px" src="images/Welcome.png">
+                            <img style="width: 80px; height: 80px" src="images/pionnier.png">
+                            <img style="width: 95px; height: 95px" src="images/mensuration.png">
+                        </div>
+
+                    </div>
                 </div>
             </div>
-
-            <div class="col-4">
-                <h3>{{ app.user.profil.nom }} {{ app.user.profil.prenom }}</h3>
-                <h6>Administrateur</h6>
-            </div>
-
-            <div class="col-4">
-                <img style="width: 70px; height: 70px" src="images/Welcome.png">
-                <img style="width: 80px; height: 80px" src="images/pionnier.png">
-                <img style="width: 95px; height: 95px" src="images/stats.png">
-            </div>
-
         </div>
+        <div class="col-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p>pseudo : {{ app.user.profil.pseudo }}</p>
+                    <p>nom : {{ app.user.profil.nom }}</p>
 
-        <br>
-
-        <div class="row justify-content-between">
-            <div class="col-6 ">
-                <div class="card shadow p-3 mb-5 bg-white rounded" >
-                    <div class="card-body">
-                        <p>pseudo : {{ app.user.profil.pseudo }}</p>
-                        <p>nom : {{ app.user.profil.nom }}</p>
-
-                        <p>prenom : {{ app.user.profil.prenom }}</p>
-                        <p>email : {{ app.user.email }}</p>
-                        <p>Date de naissance : {{ app.user.profil.dateNaissance|date("d/m/Y", "Europe/Paris") }}</p>
-                        <p>Numéro de téléphone : {{ app.user.profil.telephone }}</p>
-                        <a href="{{ path('profil_edit', {'id': app.user.profil.id}) }}">Modifier</a>
-                    </div>
+                    <p>prenom : {{ app.user.profil.prenom }}</p>
+                    <p>email : {{ app.user.email }}</p>
+                    <p>Date de naissance : {{ app.user.profil.dateNaissance|date("d/m/Y", "Europe/Paris") }}</p>
+                    <p>Numéro de téléphone : {{ app.user.profil.telephone }}</p>
+                    <a href="{{ path('profil_edit', {'id': app.user.profil.id}) }}">Modifier</a>
                 </div>
             </div>
-            <div class="col-6 ">
-                <div class="card shadow p-3 mb-5 bg-white rounded" >
-                    <div class="card-body">
-                        <p>adresse : {{ app.user.adresse.adressePostale }}</p>
-                        <p>pays : {{ app.user.adresse.pays }}</p>
-                        <p>ville : {{ app.user.adresse.ville }}</p>
-                        <p>code postal : {{ app.user.adresse.codePostal }}</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 justify-content-around">
-                <div class="card shadow p-3 mb-5 bg-white rounded" >
-                    <div class="card-body">
-                        <img style="width: 70px; height: 70px" src="images/Welcome.png">
-                        <img style="width: 80px; height: 80px" src="images/pionnier.png">
-                        <img style="width: 95px; height: 95px" src="images/stats.png">
-                        <img style="width: 70px; height: 70px" src="images/Welcome.png">
-                        <img style="width: 80px; height: 80px" src="images/pionnier.png">
-                        <img style="width: 95px; height: 95px" src="images/stats.png">
-                        <img style="width: 70px; height: 70px" src="images/Welcome.png">
-                        <img style="width: 80px; height: 80px" src="images/pionnier.png">
-                        <img style="width: 95px; height: 95px" src="images/stats.png">
-                        <img style="width: 70px; height: 70px" src="images/Welcome.png">
-                        <img style="width: 80px; height: 80px" src="images/pionnier.png">
-                        <img style="width: 95px; height: 95px" src="images/stats.png">
-                    </div>
-                </div>
-            </div>
-
         </div>
+        <div class="col-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p>adresse : {{ app.user.adresse.adressePostale }}</p>
+                    <p>pays : {{ app.user.adresse.pays }}</p>
+                    <p>ville : {{ app.user.adresse.ville }}</p>
+                    <p>code postal : {{ app.user.adresse.codePostal }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
 
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="rounded-circle" src="images/Welcome.png" alt="Generic placeholder image" width="100" height="100">
+                            <h2>Bienvenue</h2>
+                            <p>Finaliser son inscription sur le site</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img class="rounded-circle" src="images/pionnier.png" alt="Generic placeholder image" width="100" height="100">
+                            <h2>Pionnier</h2>
+                            <p>S'inscire dans les 10 000 premiers utilisateurs du site</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img class="rounded-circle" src="images/mesure.png" alt="Generic placeholder image" width="100" height="100">
+                            <h2>Mesures</h2>
+                            <p>Enregistrer ses premières mesures</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <img class="rounded-circle" src="images/mensuration.png" alt="Generic placeholder image" width="100" height="100">
+                            <h2>Mensurations</h2>
+                            <p>Enregistrer ses première mensuration</p>
+                        </div>
+                    </div>
 
-{#        <div class="row justify-content-md-center">#}
-
-{#            <div class="col col-lg-2">#}
-{#            </div>#}
-
-{#            <div class="col-md-auto">#}
-{#                <div class="text-center">#}
-{#                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">#}
-{#                        <li class="nav-item">#}
-{#                            <a class="nav-link active" id="pills-profil-tab" data-toggle="pill" href="#pills-profil" role="tab" aria-controls="pills-profil" aria-selected="true">Profil</a>#}
-{#                        </li>#}
-{#                        <li class="nav-item">#}
-{#                            <a class="nav-link" id="pills-adresse-tab" data-toggle="pill" href="#pills-adresse" role="tab" aria-controls="pills-adresse" aria-selected="false">Adresse</a>#}
-{#                        </li>#}
-{#                        <li class="nav-item">#}
-{#                            <a class="nav-link" id="pills-adresse-tab" data-toggle="pill" href="#pills-adresse" role="tab" aria-controls="pills-adresse" aria-selected="false">Adresse</a>#}
-{#                        </li>#}
-{#                    </ul>#}
-{#                    <div class="tab-content" id="pills-tabContent">#}
-{#                        <div class="tab-pane fade show active" id="pills-profil" role="tabpanel" aria-labelledby="pills-profil-tab">#}
-{#                            <p>pseudo : {{ app.user.profil.pseudo }}</p>#}
-{#                            <p>nom : {{ app.user.profil.nom }}</p>#}
-
-{#                            <p>prenom : {{ app.user.profil.prenom }}</p>#}
-{#                            <p>email : {{ app.user.email }}</p>#}
-{#                            <p>Date de naissance : {{ app.user.profil.dateNaissance|date("d/m/Y", "Europe/Paris") }}</p>#}
-{#                            <p>Numéro de téléphone : {{ app.user.profil.telephone }}</p>#}
-{#                            <a href="{{ path('profil_edit', {'id': app.user.profil.id}) }}">Modifier</a>#}
-{#                        </div>#}
-
-{#                        <div class="tab-pane fade" id="pills-adresse" role="tabpanel" aria-labelledby="pills-adresse-tab">#}
-{#                            <p>adresse : {{ app.user.adresse.adressePostale }}</p>#}
-{#                            <p>pays : {{ app.user.adresse.pays }}</p>#}
-{#                            <p>ville : {{ app.user.adresse.ville }}</p>#}
-{#                            <p>code postal : {{ app.user.adresse.codePostal }}</p>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-
-{#            <div class="col col-lg-2">#}
-
-{#            </div>#}
-{#        </div>#}
-
+                </div>
+            </div>
+        </div>
     </div>
+
+{#</div>#}
 
 
 {% endblock %}
