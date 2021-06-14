@@ -2,6 +2,7 @@
     * Utilisateur/CompteController.php
     * Profil d'un utilisateur connecté
 #}
+
 {% extends 'base.html.twig' %}
 
 {% block title %}Profil{% endblock %}
@@ -70,28 +71,48 @@
             <div class="card h-100">
                 <div class="card-body">
 
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img class="rounded-circle" src="images/Welcome.png" alt="Generic placeholder image" width="100" height="100">
-                            <h2>Bienvenue</h2>
-                            <p>Finaliser son inscription sur le site</p>
+                    {% for badge in badges %}
+                        {% set state1 = "" %}
+                        {% set state2 = "" %}
+                        {% set state3 = "" %}
+                        {% set state4 = "" %}
+                        {% if badge.bienvenue == false %}
+                            {% set state1 = "locked" %}
+                        {% endif %}
+                        {% if badge.pionnier == false %}
+                            {% set state2 = "locked" %}
+                        {% endif %}
+                        {% if badge.mesure == false %}
+                            {% set state3 = "locked" %}
+                        {% endif %}
+                        {% if badge.mensuration == false %}
+                            {% set state4 = "locked" %}
+                        {% endif %}
+
+                        <div class="row">
+                            <div class="col-lg-3 {{ state1 }}">
+                                <img class="rounded-circle" src="images/Welcome.png" alt="Generic placeholder image" width="100" height="100">
+                                <h2>Bienvenue</h2>
+                                <p>Finaliser son inscription sur le site</p>
+                            </div>
+                            <div class="col-lg-3 {{ state2 }}">
+                                <img class="rounded-circle" src="images/pionnier.png" alt="Generic placeholder image" width="100" height="100">
+                                <h2>Pionnier</h2>
+                                <p>S'inscire dans les 10 000 premiers utilisateurs du site</p>
+                            </div>
+                            <div class="col-lg-3 {{ state3 }}">
+                                <img class="rounded-circle" src="images/mesure.png" alt="Generic placeholder image" width="100" height="100">
+                                <h2>Mesures</h2>
+                                <p>Enregistrer ses premières mesures</p>
+                            </div>
+                            <div class="col-lg-3 {{ state4 }}">
+                                <img class="rounded-circle" src="images/mensuration.png" alt="Generic placeholder image" width="100" height="100">
+                                <h2>Mensurations</h2>
+                                <p>Enregistrer ses première mensuration</p>
+                            </div>
                         </div>
-                        <div class="col-lg-3">
-                            <img class="rounded-circle" src="images/pionnier.png" alt="Generic placeholder image" width="100" height="100">
-                            <h2>Pionnier</h2>
-                            <p>S'inscire dans les 10 000 premiers utilisateurs du site</p>
-                        </div>
-                        <div class="col-lg-3">
-                            <img class="rounded-circle" src="images/mesure.png" alt="Generic placeholder image" width="100" height="100">
-                            <h2>Mesures</h2>
-                            <p>Enregistrer ses premières mesures</p>
-                        </div>
-                        <div class="col-lg-3">
-                            <img class="rounded-circle" src="images/mensuration.png" alt="Generic placeholder image" width="100" height="100">
-                            <h2>Mensurations</h2>
-                            <p>Enregistrer ses première mensuration</p>
-                        </div>
-                    </div>
+
+                    {% endfor %}
 
                 </div>
             </div>

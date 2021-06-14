@@ -49,6 +49,11 @@ class Utilisateur extends BaseUser
      */
     private $mensurationObjectifs;
 
+    /**
+     * @ORM\OneToOne(targetEntity=Badge::class, mappedBy="utilisateur", cascade={"persist", "remove"})
+     */
+    private $badge;
+
     public function __construct()
     {
         parent::__construct();
@@ -168,6 +173,23 @@ class Utilisateur extends BaseUser
                 $mensurationObjectif->setUtilisateur(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getBadge(): ?Badge
+    {
+        return $this->badge;
+    }
+
+    public function setBadge(Badge $badge): self
+    {
+        // set the owning side of the relation if necessary
+        if ($badge->getUtilisateur() !== $this) {
+            $badge->setUtilisateur($this);
+        }
+
+        $this->badge = $badge;
 
         return $this;
     }

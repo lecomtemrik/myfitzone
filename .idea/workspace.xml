@@ -22,8 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="Interface compte profil update">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Utilisateur/CompteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Utilisateur/CompteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Utilisateur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/utilisateur/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/utilisateur/compte/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +50,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="FOSUserBundle-2" />
+        <entry key="$PROJECT_DIR$" value="'updateProfile-12'" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -358,6 +361,11 @@
       <workItem from="1622139730577" duration="5776000" />
       <workItem from="1622802123174" duration="5665000" />
       <workItem from="1623082455124" duration="624000" />
+      <workItem from="1623089021758" duration="599000" />
+      <workItem from="1623090700050" duration="1238000" />
+      <workItem from="1623240378469" duration="404000" />
+      <workItem from="1623585384881" duration="661000" />
+      <workItem from="1623705749211" duration="3936000" />
     </task>
     <task id="LOCAL-00002" summary="Doctrine #1 - Création des entités Article/Categorie/Utilisateur">
       <created>1613433671635</created>

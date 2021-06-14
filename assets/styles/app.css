@@ -17,5 +17,10 @@
     color: white;
 }
 
+.locked {
+    filter: grayscale(10);
+    opacity: 0.3;
+}
+
 /* #################### RESPONSIVE #################### */
 
