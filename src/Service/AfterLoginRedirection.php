@@ -22,10 +22,10 @@ class AfterLoginRedirection implements AuthenticationSuccessHandlerInterface
         $roles = $token->getRoleNames();
 
         if (in_array('ROLE_ADMIN', $roles, true)) {
-            // c'est un aministrateur : on le rediriger vers l'espace admin
+            // c'est un aministrateur : on le redirige vers l'espace admin
             $redirection = new RedirectResponse($this->router->generate('admin'));
         } else {
-            // c'est un utilisaeur lambda : on le rediriger vers l'accueil
+            // c'est un utilisaeur lambda : on le redirige vers l'accueil
             $redirection = new RedirectResponse($this->router->generate('home'));
         }
 

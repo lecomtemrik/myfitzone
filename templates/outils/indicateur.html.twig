@@ -17,6 +17,10 @@
         }
     </style>
 
+    {% for message in app.flashes('badge') %}
+        {{ include('flashmessages/success_message.html.twig') }}
+    {% endfor %}
+
     <div class="breadcrumbs "><!-- Breadcrumbs-->
         <div class="breadcrumbs-inner shadow-sm p-3 bg-white rounded">
             <div class="row m-0">

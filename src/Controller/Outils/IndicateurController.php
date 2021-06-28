@@ -4,6 +4,7 @@ namespace App\Controller\Outils;
 
 use App\Entity\Mesure;
 use App\Form\MesureType;
+use App\Repository\BadgeRepository;
 use App\Repository\MesureRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -19,11 +20,13 @@ class IndicateurController extends AbstractController
     /**
      * @Route("/", name="indicateur_index", methods={"GET","POST"})
      */
-    public function new(Request $request, MesureRepository $mesureRepository): Response
+    public function new(Request $request, MesureRepository $mesureRepository, BadgeRepository $badgeRepository): Response
     {
         $mesure = new Mesure();
         $form = $this->createForm(MesureType::class, $mesure);
         $form->handleRequest($request);
+        $badgeUser = $badgeRepository->findBy(['utilisateur'=>$this->getUser()->getId()]);
+        $badge = $badgeUser[0];
 
         $utilisateur = $this->getUser();
 
@@ -75,9 +78,16 @@ class IndicateurController extends AbstractController
         }
 
         if ($form->isSubmitted() && $form->isValid()) {
-
+            if (!$badge->getMesure()){
+                $this->addFlash(
+                    'badge',
+                    'Félicitation ! Vous venez d\'obtenir le badge Mesures, rendez vous sur votre profil pour y jeter un coup d\'oeil'
+                );
+            }
             $entityManager = $this->getDoctrine()->getManager();
             $mesure->setUtilisateur($utilisateur);
+            $badge->setMesure(true);
+            $entityManager->persist($badge);
             $entityManager->persist($mesure);
             $entityManager->flush();
 

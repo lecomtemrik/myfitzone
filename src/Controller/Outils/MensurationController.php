@@ -6,6 +6,7 @@ use App\Entity\Mensuration;
 use App\Entity\MensurationObjectif;
 use App\Form\MensurationObjectifType;
 use App\Form\MensurationType;
+use App\Repository\BadgeRepository;
 use App\Repository\MensurationObjectifRepository;
 use App\Repository\MensurationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -22,7 +23,7 @@ class MensurationController extends AbstractController
     /**
      * @Route("/", name="mensuration_index", methods={"GET","POST"})
      */
-    public function new(Request $request, MensurationRepository $mensurationRepository, MensurationObjectifRepository $mensurationObjectifRepository): Response
+    public function new(Request $request, MensurationRepository $mensurationRepository, MensurationObjectifRepository $mensurationObjectifRepository, BadgeRepository $badgeRepository): Response
     {
         $mensuration = new Mensuration();
         $mensurationObjectif = new MensurationObjectif();
@@ -31,6 +32,8 @@ class MensurationController extends AbstractController
         $formObjectif = $this->createForm(MensurationObjectifType::class, $mensurationObjectif);
         $formActuel->handleRequest($request);
         $formObjectif->handleRequest($request);
+        $badgeUser = $badgeRepository->findBy(['utilisateur'=>$this->getUser()->getId()]);
+        $badge = $badgeUser[0];
 
         $utilisateur = $this->getUser();
         $mensurationUtilisateur = $mensurationRepository->findBy(['utilisateur'=>$utilisateur->getId()]);
@@ -87,9 +90,16 @@ class MensurationController extends AbstractController
             }
 
             if ($formActuel->isSubmitted() && $formActuel->isValid()) {
+                if (!$badge->getMensuration()){
+                    $this->addFlash(
+                        'badge',
+                        'Félicitation ! Vous venez d\'obtenir le badge Mensurations, rendez vous sur votre profil pour l\'admirer'
+                    );
+                }
                 $entityManager = $this->getDoctrine()->getManager();
                 $mensuration->setUtilisateur($utilisateur);
                 $mensuration->setDate(new \DateTime('now'));
+                $badge->setMensuration(true);
                 $entityManager->persist($mensuration);
                 $entityManager->flush();
 

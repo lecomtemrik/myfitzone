@@ -5,6 +5,11 @@
 {% block title %}Mensuration{% endblock %}
 
 {% block body %}
+
+    {% for message in app.flashes('badge') %}
+        {{ include('flashmessages/success_message.html.twig') }}
+    {% endfor %}
+
     <!-- Breadcrumbs-->
     <div class="breadcrumbs">
         <div class="breadcrumbs-inner shadow-sm p-3 bg-white rounded">

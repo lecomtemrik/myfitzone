@@ -22,12 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="workspace.xml">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="ajout liste badge + état du badge refs #13">
+      <change afterPath="$PROJECT_DIR$/templates/flashmessages/danger_message.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/flashmessages/flashmessage.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/flashmessages/info_message.htlm.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/flashmessages/success_message.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/flashmessages/warning_message.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Utilisateur/CompteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Utilisateur/CompteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Utilisateur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/utilisateur/compte/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/utilisateur/compte/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/AfterLoginRedirection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/AfterLoginRedirection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -365,14 +371,13 @@
       <workItem from="1623090700050" duration="1238000" />
       <workItem from="1623240378469" duration="404000" />
       <workItem from="1623585384881" duration="661000" />
-      <workItem from="1623705749211" duration="3936000" />
-    </task>
-    <task id="LOCAL-00002" summary="Doctrine #1 - Création des entités Article/Categorie/Utilisateur">
-      <created>1613433671635</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1613433671635</updated>
+      <workItem from="1623705749211" duration="4074000" />
+      <workItem from="1623750054557" duration="666000" />
+      <workItem from="1623956135457" duration="908000" />
+      <workItem from="1624184059484" duration="4071000" />
+      <workItem from="1624546964762" duration="3422000" />
+      <workItem from="1624568327776" duration="7000" />
+      <workItem from="1624892634248" duration="2303000" />
     </task>
     <task id="LOCAL-00003" summary="Doctrine #1 - Création du controller article">
       <created>1613435067284</created>
@@ -710,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622157864032</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="ajout liste badge + état du badge refs #13">
+      <created>1623711006250</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1623711006250</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,7 +741,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dernier commit avant merge  #6" />
     <MESSAGE value="social login oauth2 bundle paramétrage de connexion avec google et préparation connexion facebook  #6" />
     <MESSAGE value="ramseyuuid bundle pour la génération d'uuid #9" />
     <MESSAGE value="Premier commit test branch mailer #10" />
@@ -754,7 +765,8 @@
     <MESSAGE value="nettoyage code/arborescence + commentaire" />
     <MESSAGE value="Interface redacteur" />
     <MESSAGE value="Interface compte profil update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interface compte profil update" />
+    <MESSAGE value="ajout liste badge + état du badge refs #13" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout liste badge + état du badge refs #13" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -765,26 +777,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="653" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615830888355" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620569876435">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624189012334">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620569876435" />
-    <state x="736" y="452" key="ComposerInitDialogKey" timestamp="1613781679085">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="736" y="452" key="ComposerInitDialogKey/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613781679085" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1613785314040">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1613785314040" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1624189012334" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1620685148537">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620685148537" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1622157867251">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1623711008566">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1622157867251" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1623711008566" />
     <state x="493" y="200" key="run.anything.popup" timestamp="1620900690717">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
