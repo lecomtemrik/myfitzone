@@ -22,18 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="ajout liste badge + état du badge refs #13">
-      <change afterPath="$PROJECT_DIR$/templates/flashmessages/danger_message.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/flashmessages/flashmessage.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/flashmessages/info_message.htlm.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/flashmessages/success_message.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/flashmessages/warning_message.html.twig" afterDir="false" />
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="Ajout flashmessage + alert notification badge refs #13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/IndicateurController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Outils/MensurationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/AfterLoginRedirection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/AfterLoginRedirection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/indicateur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/outils/mensuration.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Utilisateur/CompteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Utilisateur/CompteController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,14 +368,7 @@
       <workItem from="1624184059484" duration="4071000" />
       <workItem from="1624546964762" duration="3422000" />
       <workItem from="1624568327776" duration="7000" />
-      <workItem from="1624892634248" duration="2303000" />
-    </task>
-    <task id="LOCAL-00003" summary="Doctrine #1 - Création du controller article">
-      <created>1613435067284</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1613435067284</updated>
+      <workItem from="1624892634248" duration="4403000" />
     </task>
     <task id="LOCAL-00004" summary="modif base">
       <created>1613495138049</created>
@@ -722,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623711006250</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Ajout flashmessage + alert notification badge refs #13">
+      <created>1624898473813</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1624898473814</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -741,7 +732,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="social login oauth2 bundle paramétrage de connexion avec google et préparation connexion facebook  #6" />
     <MESSAGE value="ramseyuuid bundle pour la génération d'uuid #9" />
     <MESSAGE value="Premier commit test branch mailer #10" />
     <MESSAGE value="Email template + installation SwiftMailer #10" />
@@ -766,29 +756,30 @@
     <MESSAGE value="Interface redacteur" />
     <MESSAGE value="Interface compte profil update" />
     <MESSAGE value="ajout liste badge + état du badge refs #13" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout liste badge + état du badge refs #13" />
+    <MESSAGE value="Ajout flashmessage + alert notification badge refs #13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout flashmessage + alert notification badge refs #13" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1617236053177" />
-    <state x="653" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615830888355">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624900899684">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="653" y="32" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1615830888355" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624189012334">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1624189012334" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1624900899684" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1620685148537">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620685148537" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1623711008566">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1624898496166">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1623711008566" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1624898496166" />
+    <state x="677" y="311" key="refactoring.ChangeSignatureDialog" timestamp="1624900865130">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="677" y="311" key="refactoring.ChangeSignatureDialog/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1624900865130" />
     <state x="493" y="200" key="run.anything.popup" timestamp="1620900690717">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
