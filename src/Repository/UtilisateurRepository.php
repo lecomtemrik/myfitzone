@@ -19,6 +19,15 @@ class UtilisateurRepository extends ServiceEntityRepository
         parent::__construct($registry, Utilisateur::class);
     }
 
+    public function totalCount()
+    {
+        return $this->createQueryBuilder('u')
+            ->select('count(u.id)')
+            ->getQuery()
+            ->getSingleScalarResult()
+            ;
+    }
+
     // /**
     //  * @return Utilisateur[] Returns an array of Utilisateur objects
     //  */

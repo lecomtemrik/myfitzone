@@ -22,9 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="Ajout flashmessage + alert notification badge refs #13">
+    <list default="true" id="4eaaf4df-dd33-432b-993b-3a248d55e125" name="Default Changelist" comment="logique badge bienvenue refs #13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Utilisateur/CompteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Utilisateur/CompteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UtilisateurRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UtilisateurRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,14 +369,8 @@
       <workItem from="1624184059484" duration="4071000" />
       <workItem from="1624546964762" duration="3422000" />
       <workItem from="1624568327776" duration="7000" />
-      <workItem from="1624892634248" duration="4403000" />
-    </task>
-    <task id="LOCAL-00004" summary="modif base">
-      <created>1613495138049</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1613495138049</updated>
+      <workItem from="1624892634248" duration="4723000" />
+      <workItem from="1625325743257" duration="2424000" />
     </task>
     <task id="LOCAL-00005" summary="FOSUserBundle #2 Branch first commit">
       <created>1613499631127</created>
@@ -713,7 +708,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624898473814</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="logique badge bienvenue refs #13">
+      <created>1624901939493</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1624901939493</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -732,7 +734,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ramseyuuid bundle pour la génération d'uuid #9" />
     <MESSAGE value="Premier commit test branch mailer #10" />
     <MESSAGE value="Email template + installation SwiftMailer #10" />
     <MESSAGE value="calculatrice imc/img + mensuration #11" />
@@ -757,7 +758,8 @@
     <MESSAGE value="Interface compte profil update" />
     <MESSAGE value="ajout liste badge + état du badge refs #13" />
     <MESSAGE value="Ajout flashmessage + alert notification badge refs #13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout flashmessage + alert notification badge refs #13" />
+    <MESSAGE value="logique badge bienvenue refs #13" />
+    <option name="LAST_COMMIT_MESSAGE" value="logique badge bienvenue refs #13" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1075" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1617236053177">
@@ -772,10 +774,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1620685148537" />
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1624898496166">
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2" timestamp="1624901941184">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1624898496166" />
+    <state x="552" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.-1.1536.864@0.0.1920.1080" timestamp="1624901941184" />
     <state x="677" y="311" key="refactoring.ChangeSignatureDialog" timestamp="1624900865130">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -2,6 +2,7 @@
 
 namespace App\Controller\Utilisateur;
 
+use App\Entity\Utilisateur;
 use App\Repository\BadgeRepository;
 use App\Repository\UtilisateurRepository;
 use Symfony\Component\HttpFoundation\Response;
@@ -21,9 +22,13 @@ class CompteController extends AbstractController
 
         $badgeUser = $badgeRepository->findBy(['utilisateur'=>$this->getUser()->getId()]);
         $badge = $badgeUser[0];
+        $totalUser = $utilisateurRepository->totalCount();
 
         if (!$badge->getBienvenue()){
             $entityManager = $this->getDoctrine()->getManager();
+            if ($totalUser < 10000){
+                $badge->setPionnier(true);
+            }
             $badge->setBienvenue(true);
             $entityManager->persist($badge);
             $entityManager->flush();
